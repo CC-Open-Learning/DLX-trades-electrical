@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/CloudSave.uss?fileID=7433441132597879392&amp;guid=800e6a20196896e41aad333183553439&amp;type=3#CloudSave" />
+    <ui:VisualElement name="IconContainer" style="margin-left: 16px; margin-right: 16px; margin-top: 16px; margin-bottom: 16px; align-self: flex-end; position: absolute; bottom: 0; flex-direction: column-reverse; right: 0;">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloudStatusSuccess" class="icon" style="background-color: rgb(85, 128, 81);">
+            <ui:VisualElement name="Shadow" class="shadow" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/cloud-check-svgrepo-com.png?fileID=2800000&amp;guid=bee088606d5acc346b9767aa2c395f81&amp;type=3#cloud-check-svgrepo-com&apos;);">
+                <ui:VisualElement name="Overlay" class="overlay" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/cloud-check-svgrepo-com.png?fileID=2800000&amp;guid=bee088606d5acc346b9767aa2c395f81&amp;type=3#cloud-check-svgrepo-com&apos;);" />
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloudStatusError" class="icon" style="background-color: rgb(123, 56, 56);">
+            <ui:VisualElement name="Shadow" class="shadow" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/cloud-xmark-svgrepo-com.png?fileID=2800000&amp;guid=6eb3558588da06e438792a51495e6133&amp;type=3#cloud-xmark-svgrepo-com&apos;);">
+                <ui:VisualElement name="Overlay" class="overlay" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/cloud-xmark-svgrepo-com.png?fileID=2800000&amp;guid=6eb3558588da06e438792a51495e6133&amp;type=3#cloud-xmark-svgrepo-com&apos;);" />
+            </ui:VisualElement>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

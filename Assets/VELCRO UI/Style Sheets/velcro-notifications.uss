@@ -1,0 +1,20 @@
+.notification {
+    border-radius: 40px;
+    color: var(--general-13);
+    opacity: 0;
+    transition-duration: 0.75s;
+    transition-property: opacity, translate;
+    transition-timing-function: ease-in-out-back;
+}
+
+.notification-success {
+    background-color: var(--green-1);
+}
+
+.notification-info {
+    background-color: var(--blue-9);
+}
+
+.notification-error {
+    background-color: var(--red-3);
+}

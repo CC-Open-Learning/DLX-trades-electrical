@@ -1,0 +1,313 @@
+.unity-text-element {
+    -unity-font: resource('Fonts & Materials/Lato-Regular');
+    -unity-font-definition: resource('Fonts & Materials/Lato-Regular SDF');
+}
+
+.unity-tree-view__item {
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.unity-tree-view__item:hover {
+    background-color: transparent;
+}
+
+.unity-tree-view__item-content .unity-label {
+    align-items: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    white-space: normal;
+}
+
+.unity-tree-view__item-content {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.unity-tree-view__item-toggle {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/plus-square.png?fileID=21300000&guid=01965a525b132ce429c64c52dcad0ae6&type=3#plus-square');
+    width: 0;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.unity-tree-view__item-toggle:hover {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/plus-square-filled.png?fileID=21300000&guid=be071c90ffe27854b949014f1a2650fa&type=3#plus-square-filled');
+}
+
+.unity-tree-view__item-toggle:checked {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/minus-square.png?fileID=21300000&guid=421e8b36344a28e44aa802dc379b4ac3&type=3#minus-square');
+}
+
+.unity-tree-view__item-toggle:checked:hover {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/minus-square-filled.png?fileID=21300000&guid=95e0c09d8bc1d504f8d3222b1112ae6d&type=3#minus-square-filled');
+}
+
+.unity-scroller {
+    width: 14px;
+    min-width: 14px;
+    margin-left: 4px;
+}
+
+.unity-scroller__slider {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    min-width: 100%;
+}
+
+.unity-base-slider__tracker {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    min-width: 100%;
+    background-color: rgb(221, 221, 221);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    width: 100%;
+}
+
+.unity-base-slider__dragger {
+    min-width: 100%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    left: 0;
+    right: 0;
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+}
+
+.unity-scroller__low-button {
+    display: none;
+}
+
+.unity-scroller__high-button {
+    display: none;
+}
+
+.unity-toggle__checkmark {
+    background-image: none;
+}
+
+.feedback-header-text {
+    -unity-font-style: bold;
+    font-size: 28px;
+    bottom: 0;
+    -unity-text-align: middle-center;
+    height: 128px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.clipboard {
+    flex-grow: 1;
+    width: 564px;
+    height: 772px;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Supervisor%20Feedback/wood-texture.png?fileID=2800000&guid=f4afe195ac9504c44bde3537ddc73266&type=3#wood-texture');
+    position: absolute;
+    top: 72px;
+    left: auto;
+    right: 18px;
+    bottom: auto;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.paper {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Supervisor%20Feedback/paper-texture.png?fileID=2800000&guid=8c6d72e6cefc2ab408644f607f342a20&type=3#paper-texture');
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.feedback-container {
+    align-self: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 498px;
+    height: 390px;
+}
+
+.box-mount-feedback-item {
+    flex-grow: 1;
+    height: 80px;
+    border-left-color: rgb(179, 179, 179);
+    border-right-color: rgb(179, 179, 179);
+    border-top-color: rgb(179, 179, 179);
+    border-bottom-color: rgb(179, 179, 179);
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    flex-shrink: 0;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-mount-feedback-label {
+    -unity-font: url('project://database/Assets/UI%20Toolkit/Fonts/GochiHand-Regular.ttf?fileID=12800000&guid=74906001c8eb10f43933a6e5d1513a6e&type=3#GochiHand-Regular');
+    -unity-font-definition: url('project://database/Assets/UI%20Toolkit/Fonts/GochiHand-Regular%20SDF.asset?fileID=11400000&guid=28380e966effb15469f9866f413b320d&type=2#GochiHand-Regular SDF');
+    font-size: 30px;
+    -unity-font-style: normal;
+    position: relative;
+    height: 90%;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 32px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+    border-right-color: rgb(179, 179, 179);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.box-mount-indicator-group {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.feedback-indicator-container {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 42px;
+}
+
+.feedback-indicator-label {
+    -unity-font-definition: url('project://database/Assets/UI%20Toolkit/Fonts/GochiHand-Regular%20SDF.asset?fileID=11400000&guid=28380e966effb15469f9866f413b320d&type=2#GochiHand-Regular SDF');
+    -unity-font: url('project://database/Assets/UI%20Toolkit/Fonts/GochiHand-Regular.ttf?fileID=12800000&guid=74906001c8eb10f43933a6e5d1513a6e&type=3#GochiHand-Regular');
+    font-size: 28px;
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
+    white-space: nowrap;
+    padding-left: 18px;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.feedback-indicator {
+    width: 26px;
+    height: 26px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-blocked.png?fileID=2800000&guid=a856cb83983e1974788fa6af159c2681&type=3#cursor-blocked');
+    flex-shrink: 0;
+}
+
+.feedback-indicator__correct {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/CorrectIcon.png?fileID=2800000&guid=65e094de3132c8c47bda23765da3601e&type=3#CorrectIcon');
+}
+
+.feedback-indicator__incorrect {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/IncorrectIcon.png?fileID=2800000&guid=13dc28a789d7e7f4999115b03acdd9d0&type=3#IncorrectIcon');
+}
+
+.review-container {
+    width: 498px;
+    position: absolute;
+    bottom: 32px;
+    min-height: 124px;
+    align-self: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.review-text {
+    color: rgb(45, 45, 45);
+    font-size: 18px;
+    -unity-font-style: normal;
+    white-space: normal;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+}
+
+.review-status {
+    width: 220px;
+    align-self: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -unity-font-style: bold;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.review-status-icon {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    flex-direction: row;
+    align-self: center;
+    -unity-background-scale-mode: scale-to-fit;
+    left: -64px;
+}
+
+.cec-rules-explanation {
+    font-size: 22px;
+    color: rgb(45, 45, 45);
+    -unity-font-style: normal;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: normal;
+    width: 480px;
+    align-self: center;
+}

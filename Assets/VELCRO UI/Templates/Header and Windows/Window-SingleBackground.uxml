@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Header" src="project://database/Assets/VELCRO%20UI/Templates/Header%20and%20Windows/Header.uxml?fileID=9197481963319205126&amp;guid=4ddcdeade465a68488f2568fcfa1742c&amp;type=3#Header" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <ui:VisualElement name="Canvas" class="grow align-items-center justify-center">
+        <ui:VisualElement name="Window" class="br-20 window-single">
+            <ui:Instance template="Header" name="Header" />
+            <ui:VisualElement name="Content" style="flex-grow: 1;" />
+            <ui:VisualElement name="Footer" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,168 @@
+.confirmation-button {
+    background-color: rgb(255, 204, 51);
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    width: 482px;
+    align-self: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    height: 52px;
+    margin-left: 0;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular%20SDF.asset?fileID=11400000&guid=12ab6caf9aeda374381504c0d923ca08&type=2#Lato-Regular SDF');
+    -unity-font: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular.ttf?fileID=12800000&guid=876a9438552962342bf2cea71952e2be&type=3#Lato-Regular');
+    font-size: 22px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.confirmation-button:hover:enabled {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    background-color: rgb(255, 222, 123);
+}
+
+.confirmation-button:active:enabled {
+    scale: 0.97 0.97;
+}
+
+.confirmation-button__alt {
+    background-color: rgb(0, 0, 0);
+    border-left-color: rgb(255, 204, 51);
+    border-right-color: rgb(255, 204, 51);
+    border-top-color: rgb(255, 204, 51);
+    border-bottom-color: rgb(255, 204, 51);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    color: rgb(255, 204, 51);
+}
+
+.confirmation-button__alt:hover:enabled {
+    background-color: rgb(102, 83, 18);
+    border-left-color: rgb(255, 204, 51);
+    border-right-color: rgb(255, 204, 51);
+    border-top-color: rgb(255, 204, 51);
+    border-bottom-color: rgb(255, 204, 51);
+}
+
+.title {
+    height: auto;
+    width: auto;
+    margin-left: 0;
+    font-size: 32px;
+    -unity-text-align: middle-left;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: auto;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    bottom: auto;
+    left: auto;
+    right: auto;
+    align-self: auto;
+    align-items: auto;
+    justify-content: flex-start;
+}
+
+.dialog-content {
+    flex-grow: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    width: 969px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition-property: display;
+    transition-delay: 2s;
+}
+
+.image {
+    flex-grow: 0;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Clock-time-passing.jpg?fileID=21300000&guid=a2baa9007d5ecd548998963894360306&type=3#Clock-time-passing');
+    flex-shrink: 1;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 308px;
+    width: 323px;
+    padding-right: 0;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+.body {
+    height: 307px;
+    width: 536px;
+    margin-left: 0;
+    font-size: 24px;
+    -unity-text-align: upper-left;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    white-space: normal;
+    color: rgb(255, 255, 255);
+    right: auto;
+    bottom: auto;
+    left: auto;
+    align-items: auto;
+    align-self: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: flex-start;
+}
+
+.image-text-group-box {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: auto;
+    height: 295px;
+    width: auto;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+.dialog-window {
+    justify-content: center;
+    align-items: center;
+    flex-display: row;
+    flex-grow: 1;
+    align-self: auto;
+    flex-shrink: 0;
+    background-color: rgb(18, 18, 18);
+}

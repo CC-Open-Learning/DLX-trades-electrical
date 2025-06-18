@@ -1,0 +1,30 @@
+{
+    "name": "VARLab.TradesElectrical",
+    "rootNamespace": "VARLab.TradesElectrical",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:e0cdf70e0672612409d1b39552e7a2a4",
+        "GUID:21d1eb854b91ade49bc69a263d12bee2",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:09b0cd755cac1c14cb15cdd46394a965",
+        "GUID:4307f53044263cf4b835bd812fc161a4",
+        "GUID:366c044d9e643a7499e9121b0e9b6952",
+        "GUID:e43142fc3fec6554980dde6126631f1d",
+        "GUID:e0cdf70e0672612409d1c39552e7a2a1",
+        "GUID:9a7887d701f1c1f419a2a893975af976",
+        "GUID:b765bae2a3178a34f927142c0c837f78",
+        "GUID:779c215ae3fac6047b1863f8291dd770",
+        "GUID:0da6d172d18a54e4389d0dce1e1ffdf2",
+        "GUID:1d0983e8e0dfb6a48b2a8d30f7a4262c",
+        "GUID:8344be0049bdb914a8b25ff80fec5adf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

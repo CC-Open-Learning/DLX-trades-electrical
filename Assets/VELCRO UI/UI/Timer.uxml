@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-timer.uss?fileID=7433441132597879392&amp;guid=82d6a570be26f0f41abafacd2e9c2628&amp;type=3#velcro-timer" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="TimerContainer" class="timer br-10 align-self-end timer-closed">
+        <Kamgam.UIToolkitGlow.Shadow inner-color="#000000CC" blur-width="3" name="Shadow" offset-y="20" scale-y="0.65" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+            <ui:VisualElement name="TimerBody" class="flex-row timer-body grow br-10">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="LeftHandle" class="timer-left-handle align-items-center justify-center br-tl-10 br-bl-10 m-0 p-0">
+                    <ui:VisualElement name="Arrow" class="timer-arrow timer-closed-arrow" />
+                    <ui:VisualElement name="GradientContainer" class="grow absolute timer-gradient-container br-bl-10 br-br-10" style="height: 54px; top: 34px;">
+                        <VARLab.Velcro.GradientElement class="grow timer-gradient" />
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:VisualElement name="LabelHolder" class="grow timer-label-holder pb-20">
+                    <ui:Label tabindex="-1" text="Time Elapsed" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="fw-400 timer-title-label p-0 m-0" />
+                    <ui:Label tabindex="-1" text="00 : 00 : 00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ElapsedTimeLabel" class="fw-400 fs-28 timer-elapsed-time-label p-0 m-0" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </Kamgam.UIToolkitGlow.Shadow>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Dialog.uss?fileID=7433441132597879392&amp;guid=c78e02c666155c94daaca31a97450884&amp;type=3#Dialog" />
+    <ui:VisualElement name="Screen" class="screen modal-light">
+        <ui:VisualElement name="Window" class="window" style="width: 800px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text=" Error" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" style="display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content" style="flex-grow: 0;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Art/Sprites/UI/cloud-xmark-svgrepo-com.png?fileID=2800000&amp;guid=6eb3558588da06e438792a51495e6133&amp;type=3#cloud-xmark-svgrepo-com&apos;); -unity-background-scale-mode: scale-to-fit; height: 180px; margin-bottom: -16px; margin-top: -32px; -unity-background-image-tint-color: rgb(243, 243, 243);" />
+                <ui:Label tabindex="-1" text="Network Error!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="h3" style="-unity-text-align: upper-center; display: flex; -unity-font-style: bold;" />
+                <ui:Label tabindex="-1" text="Unable to connect to the server at the moment." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="h3" style="-unity-text-align: upper-center; display: flex; -unity-font-style: normal;" />
+                <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; flex-direction: column; justify-content: center; align-self: stretch; align-items: center; padding-bottom: 12px;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnConfirm" text="Try Again" class="confirmation-button" style="align-self: center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

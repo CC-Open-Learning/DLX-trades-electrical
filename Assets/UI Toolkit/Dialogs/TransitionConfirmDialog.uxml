@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/DisplayTransition.uss?fileID=7433441132597879392&amp;guid=005583a7775f1894486dd96228278c06&amp;type=3#DisplayTransition" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Dialog.uss?fileID=7433441132597879392&amp;guid=c78e02c666155c94daaca31a97450884&amp;type=3#Dialog" />
+    <ui:VisualElement name="Window" class="dialog-window">
+        <ui:VisualElement name="Content" class="dialog-content">
+            <ui:GroupBox name="GroupBox">
+                <ui:Label tabindex="-1" text="Rough-in Inspection Completed and Passed" display-tooltip-when-elided="true" name="Title" class="Label title" />
+                <ui:GroupBox name="GroupBox" class="image-text-group-box">
+                    <ui:VisualElement name="Image" class="image" />
+                    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Body" text="After the rough-in inspection is completed and passed, there is a pause in electrical work while other work is happening at the residential build site.\n\nPlumbing, HVAC, insulation, and drywall will all be finished while you are focused on other jobs. \n\nWhen you return to this job site to continue the project, everything looks so different!" enable-rich-text="true" class="Label body" />
+                </ui:GroupBox>
+            </ui:GroupBox>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnConfirm" enable-rich-text="false" focusable="true" text="Let&apos;s go!" class="redo-confirm unity-button confirmation-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

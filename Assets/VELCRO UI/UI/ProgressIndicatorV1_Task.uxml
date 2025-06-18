@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-progress.uss?fileID=7433441132597879392&amp;guid=3c0f4f2f7b301c74d874dbba436322f7&amp;type=3#velcro-progress" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="Task" class="w-100 flex-row align-items-center progress-v1-task p-16">
+        <ui:VisualElement name="Checkmark" class="progress-v1-task-checkmark progress-v1-task-checkmark-checked">
+            <ui:VisualElement name="Icon" class="grow progress-v1-task-checkmark-checked-icon" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TaskInfo" class="grow h-100 flex-row align-items-center justify-space-between ml-8 mr-4">
+            <ui:Label tabindex="-1" text="Task 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TaskLabel" class="fw-400 progress-v1-task-label grow m-0 p-0 mr-48 fs-20 text-align-middle-left progress-v1-task-completed-label" />
+            <ui:Label tabindex="-1" text="(0/0 found)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressLabel" class="fw-400 progress-v1-task-progress-label progress-v1-task-progress-label-highlight m-0 p-0 text-align-middle-right fs-20 progress-v1-task-completed-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

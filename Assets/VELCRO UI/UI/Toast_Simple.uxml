@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-toast.uss?fileID=7433441132597879392&amp;guid=1b6dbd2da63781e418d6b81f9415f058&amp;type=3#velcro-toast" />
+    <ui:VisualElement name="Toast" class="toast-simple o-0 flex-row align-self-center">
+        <ui:VisualElement name="LeftBar" class="leftBar-simple" />
+        <ui:VisualElement name="Icon" class="icon-simple" />
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="mt-0 mb-0 ml-0 p-0 fs-24 text-align-middle-left label-simple fw-700" />
+        <ui:Label tabindex="-1" text="Auxilliary Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AuxilliaryLabel" class="align-self-center p-0 m-0 fs-28 text-align-middle-left fw-400 auxilliaryLabel-simple" />
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseButton" class="m-0 p-0 bw-0 closeButton-simple" />
+    </ui:VisualElement>
+</ui:UXML>

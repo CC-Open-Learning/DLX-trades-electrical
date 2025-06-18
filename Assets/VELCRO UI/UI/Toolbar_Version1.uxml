@@ -1,0 +1,69 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-toolbar.uss?fileID=7433441132597879392&amp;guid=ca165599ff3aa4a4895631dfa8a56b80&amp;type=3#velcro-toolbar" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <ui:VisualElement name="Container" class="align-self-start align-items-center flex-row h-100">
+        <ui:VisualElement name="Toolbar" class="toolbar-version-1">
+            <ui:VisualElement name="ItemBar" class="TMP itemBar-v1 justify-space-around">
+                <ui:VisualElement name="ComplexButtons" class="complexcontainer">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupOne" class="itemgroup align-items-center justify-center flex-row p-0 m-0 bw-0">
+                        <ui:VisualElement name="SelectedBar" class="selected-bar" />
+                        <ui:VisualElement name="ContentContainer" class="contentgroup grow align-items-center">
+                            <ui:VisualElement name="Icon" class="itemicon bw-2 p-8">
+                                <ui:VisualElement name="Image" class="iconimage" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="itemlabel fw-700 fs-20 m-0 p-0" style="text-overflow: clip;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupTwo" class="itemgroup align-items-center justify-center flex-row p-0 m-0 bw-0">
+                        <ui:VisualElement name="SelectedBar" class="selected-bar" />
+                        <ui:VisualElement name="ContentContainer" class="contentgroup grow align-items-center">
+                            <ui:VisualElement name="Icon" class="itemicon bw-2 p-8">
+                                <ui:VisualElement name="Image" class="itemselected iconimage" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="itemlabel fw-700 fs-20 m-0 p-0" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupThree" class="itemgroup align-items-center justify-center flex-row p-0 m-0 bw-0">
+                        <ui:VisualElement name="SelectedBar" class="selected-bar" />
+                        <ui:VisualElement name="ContentContainer" class="contentgroup grow align-items-center">
+                            <ui:VisualElement name="Icon" class="itemicon bw-2 p-8">
+                                <ui:VisualElement name="Image" class="iconimage" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="itemlabel fw-700 fs-20 m-0 p-0" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Seperator" class="seperator bw-1 absolute h-0" style="flex-grow: 1;" />
+                <ui:VisualElement name="SimpleButtons" class="simplecontainer">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupFour" class="itemgroupsimple align-items-center justify-center flex-row p-0 m-0 bw-0">
+                        <ui:VisualElement name="SelectedBar" class="selected-bar" />
+                        <ui:VisualElement name="ContentContainer" class="contentgroupsimple grow align-items-center">
+                            <ui:VisualElement name="Icon" class="itemicon bw-2 p-8">
+                                <ui:VisualElement name="Image" class="iconimage" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupFive" class="itemgroupsimple align-items-center justify-center flex-row p-0 m-0 bw-0">
+                        <ui:VisualElement name="SelectedBar" class="selected-bar" />
+                        <ui:VisualElement name="ContentContainer" class="contentgroupsimple grow align-items-center">
+                            <ui:VisualElement name="Icon" class="itemicon bw-2 p-8">
+                                <ui:VisualElement name="Image" class="iconimage" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ContractContainer" class="TMP contractContainer-v1 absolute">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ContractButton" class="contractButton-v1 bw-0" style="flex-grow: 1;">
+                    <ui:VisualElement name="ArrowImage" class="TMP arrowImage-v1 absolute" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="ExpandContainer" class="expandContainer" style="flex-grow: 1;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ExpandButton" class="m-0">
+                    <ui:VisualElement name="ArrowImage" class="arrowImage-v1 absolute" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

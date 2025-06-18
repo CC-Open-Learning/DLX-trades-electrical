@@ -1,0 +1,246 @@
+.toolbar-version-1 {
+    width: 208px;
+    height: 1080px;
+}
+
+.itemBar-v1 {
+    width: 175px;
+    height: 1080px;
+    background-color: var(--toolbar-version-one-background-color);
+}
+
+.contractContainer-v1 {
+    width: 46px;
+    top: 97px;
+    left: 167.5px;
+    bottom: 97px;
+}
+
+.contractButton-v1 {
+    background-image: var(--toolbar-version-one-contract-sprite);
+    background-color: var(--toolbar-version-one-contract-expand-background-color);
+}
+
+.contractButton-v1:hover {
+    background-color: var(--toolbar-version-one-contract-expand-background-color);
+}
+
+.arrowImage-v1 {
+    background-image: var(--toolbar-version-one-button-arrow);
+    top: 50%;
+    left: -35%;
+    width: 35px;
+    height: 37.5px;
+}
+
+.complexcontainer {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.simplecontainer {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.itemgroup {
+    flex-grow: 0;
+    height: 223px;
+    background-color: var(--toolbar-version-one-item-group-background);
+    overflow: visible;
+}
+
+.itemgroup:hover {
+    background-color: var(--toolbar-version-one-item-group-background);
+}
+
+.itemgroup:hover:active {
+    background-color: var(--toolbar-version-one-item-group-background);
+}
+
+.itemgroup-selected > #ContentContainer > #Icon {
+    border-color: var(--toolbar-version-one-selected-color);
+}
+
+.itemgroup-selected > #ContentContainer > #Icon > #Image {
+    -unity-background-image-tint-color: var(--toolbar-version-one-selected-color);
+}
+
+.itemgroup-selected > #ContentContainer > #Text {
+    color: var(--toolbar-version-one-selected-color);
+}
+
+.contentgroup {
+    height: 136px;
+}
+
+.contentgroupsimple {
+    height: 75px;
+}
+
+.itemgroupsimple {
+    flex-grow: 0;
+    height: 100px;
+    background-color: var(--toolbar-version-one-item-group-background);
+    overflow: visible;
+}
+
+.itemgroupsimple:hover {
+    background-color: var(--toolbar-version-one-item-group-background);
+}
+
+.itemgroupsimple:hover:active {
+    background-color: var(--toolbar-version-one-item-group-background);
+}
+
+.itemicon {
+    flex-grow: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border-color: var(--toolbar-version-one-item-color);
+    margin-bottom: 15px;
+}
+
+.iconimage {
+    -unity-background-image-tint-color: var(--toolbar-version-one-item-color);
+}
+
+.itemlabel {
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    white-space: normal;
+    color: var(--toolbar-version-one-item-color);
+}
+
+.seperator {
+    width: 111px;
+    left: 32px;
+    top: 758px;
+    border-color: var(--toolbar-version-one-seperator-line-color);
+}
+
+.expandContainer {
+    display: none;
+}
+
+.toolbar-version-1-closed {
+    width: 97px;
+    height: 886px;
+    max-width: initial;
+    max-height: initial;
+}
+
+.toolbar-version-1-closed > #ExpandContainer {
+    margin-left: 175px;
+    width: 97px;
+    height: 886px;
+    display: flex;
+}
+
+.toolbar-version-1-closed > #ExpandContainer > #ExpandButton {
+    position: absolute;
+    width: 97px;
+    height: 886px;
+    background-color: var(--toolbar-version-one-item-group-background);
+    -unity-background-image-tint-color: var(--toolbar-version-one-expand-button-color);
+    border-width: 0;
+    background-image: var(--toolbar-version-one-expand-sprite);
+}
+
+.toolbar-version-1-closed > #ExpandContainer > #ExpandButton > #ArrowImage {
+    position: absolute;
+    left: 25px;
+    top: 414.5px;
+    width: 37.15px;
+    height: 57.34px;
+    background-image: var(--toolbar-version-one-expand-arrow);
+}
+
+.toolbar-version-1-closed > #ItemBar {
+    display: none;
+}
+
+.toolbar-version-1-closed > #ContractContainer {
+    display: none;
+}
+
+.selected-bar {
+    background-color: var(--toolbar-version-one-selected-color);
+    width: 11px;
+    height: 100%;
+    visibility: hidden;
+}
+
+.toolbar-version-2 {
+    width: 175px;
+    height: 760px;
+    border-radius: 20px;
+    background-color: var(--toolbar-version-two-background-color);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.iconimage-v2 {
+    -unity-background-image-tint-color: var(--toolbar-version-two-item-color);
+}
+
+.itemlabel-v2 {
+    width: 68px;
+    height: 48px;
+    overflow: hidden;
+    white-space: normal;
+    color: var(--toolbar-version-two-item-color);
+}
+
+.selected-bar-v2 {
+    background-color: var(--toolbar-version-two-selected-color);
+    width: 11px;
+    height: 100%;
+    visibility: hidden;
+}
+
+.iconcontainer-v2 {
+    height: 70px;
+    width: 70px;
+    flex-grow: 0;
+    border-width: 4px;
+    border-radius: 100px;
+    border-color: var(--toolbar-version-two-item-color);
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.itemgroup-v2 {
+    flex-grow: 0;
+    height: 145px;
+    background-color: var(--toolbar-version-two-item-group-background);
+}
+
+.itemgroup-v2-selected > #ContentContainer > #IconContainer > #Image {
+    -unity-background-image-tint-color: var(--toolbar-version-two-selected-color);
+}
+
+.itemgroup-v2-selected > #ContentContainer > #IconContainer {
+    border-color: var(--toolbar-version-two-selected-color);
+}
+
+.itemgroup-v2-selected > #ContentContainer > #Text {
+    color: var(--toolbar-version-two-selected-color);
+}
+
+.contentgroup-v2 {
+    height: 136px;
+    flex-grow: 1;
+}
+
+.itemgroup-v2:hover {
+    background-color: var(--toolbar-version-one-item-group-background);
+}
+
+.itemgroup-v2:hover:active {
+    background-color: var(--toolbar-version-one-item-group-background);
+}

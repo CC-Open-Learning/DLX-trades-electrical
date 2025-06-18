@@ -1,0 +1,181 @@
+.settings-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 140px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.settings-button:hover:enabled {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.settings-button:active:enabled {
+    background-color: rgba(255, 255, 255, 0.5);
+    scale: 0.96 0.96;
+}
+
+.settings-button__selected {
+    background-color: rgb(229, 229, 229);
+    scale: 0.96 0.96;
+    color: rgb(0, 0, 0);
+}
+
+.settings-section {
+    flex-grow: 1;
+}
+
+.settings-element {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 52px;
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.settings-element__label {
+    font-size: 22px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-self: center;
+    -unity-font-style: bold;
+    width: 50%;
+}
+
+.unity-base-field__label {
+    font-size: 22px;
+    -unity-font-style: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-self: center;
+}
+
+.unity-base-field__input {
+    align-self: stretch;
+    flex-grow: 1;
+    max-width: 440px;
+}
+
+.unity-popup-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.unity-base-popup-field__text {
+    font-size: 18px;
+    -unity-font-style: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.unity-base-popup-field__arrow {
+    height: 12px;
+    width: 12px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.48);
+}
+
+.unity-toggle__input {
+    justify-content: flex-end;
+}
+
+.unity-toggle__checkmark {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 36px;
+    width: 36px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.64);
+}
+
+.unity-base-slider__label {
+    width: 50%;
+}
+
+.unity-base-slider__tracker {
+    background-color: rgb(154, 154, 154);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 8px;
+    margin-top: -4px;
+}
+
+.unity-base-slider__dragger {
+    background-color: rgb(255, 255, 255);
+    height: 28px;
+    margin-top: -14px;
+    width: 12px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

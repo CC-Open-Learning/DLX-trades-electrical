@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TabView.uss?fileID=7433441132597879392&amp;guid=38b292bfa58ca214a85ec6e76bc6fcc6&amp;type=3#TabView" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Welcome.uss?fileID=7433441132597879392&amp;guid=af2e6ecd7fa5846499dd58cfef668582&amp;type=3#Welcome" />
+    <ui:VisualElement name="Content" class="content-container">
+        <ui:VisualElement name="TopTextContainer" style="flex-direction: row;">
+            <ui:VisualElement name="SupervisorIcon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Supervisor%20Feedback/Contractor.png?fileID=21300000&amp;guid=71c76924556a8ef41a59b2af9b078255&amp;type=3#Contractor&apos;); -unity-background-scale-mode: scale-to-fit; margin-right: 32px; width: 180px;" />
+            <ui:VisualElement name="TextBodyContainer" style="flex-grow: 2;">
+                <ui:Label tabindex="-1" text="Welcome to the Conestoga Virtual Job Site!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="h2" style="white-space: normal; padding-bottom: 18px;" />
+                <ui:Label tabindex="-1" text="Hi! I am your supervising electrician.&#10;&#10;You are the &lt;b&gt;apprentice electrician&lt;/b&gt; on this &lt;b&gt;residential bathroom&lt;/b&gt; electrical installation. You will complete the installation from rough-in to final inspection." parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="BodyText" class="body-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="GrayBorderBox" style="background-color: rgb(45, 45, 45); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 16px; border-bottom-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; margin-top: 32px; margin-bottom: 32px; padding-bottom: 12px; padding-top: 12px;">
+            <ui:Label tabindex="-1" text="You will use..." parse-escape-sequences="true" display-tooltip-when-elided="true" class="header-text h3" style="margin-bottom: 12px;" />
+            <ui:VisualElement name="ImageTextGroup" class="row-flex">
+                <ui:VisualElement name="ImageTextContainer" class="image-text-container" style="align-self: auto; align-items: center;">
+                    <ui:VisualElement name="BookmarkIcon" class="icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/BookBookmarkIcon.png?fileID=21300000&amp;guid=0c3020d2c7b337d4c9f63a66b287bbd9&amp;type=3#BookBookmarkIcon&apos;);" />
+                    <ui:Label tabindex="-1" text="CEC book to look up code rules" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageTextContainer" class="image-text-container">
+                    <ui:VisualElement name="FrameIcon" class="icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/FrameIcon.png?fileID=21300000&amp;guid=6047f23a616b5984ea71a32d97734c53&amp;type=3#FrameIcon&apos;);" />
+                    <ui:Label tabindex="-1" text="&lt;b&gt;Project Specifications&lt;/b&gt; in-game" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageTextContainer" class="image-text-container" style="height: auto; flex-shrink: 0; max-width: none;">
+                    <ui:VisualElement name="BookmarkIcon" class="icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/WelcomeClipboardIcon.png?fileID=21300000&amp;guid=0fbf89d0624fff44fbcdd17c75cb0b65&amp;type=3#WelcomeClipboardIcon&apos;);" />
+                    <ui:Label tabindex="-1" text="&lt;b&gt;Supervisor Feedback&lt;/b&gt; in-game" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Remember, in the real world, your supervisor will NOT check your work as often, so always check your work carefully!" name="Instructions" class="instructions-text text-blue" />
+    </ui:VisualElement>
+</ui:UXML>

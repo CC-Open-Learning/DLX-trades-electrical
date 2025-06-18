@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/DisplayTransition.uss?fileID=7433441132597879392&amp;guid=005583a7775f1894486dd96228278c06&amp;type=3#DisplayTransition" />
+    <ui:VisualElement style="flex-grow: 1; background-image: resource(&apos;Images/Splash_Screen_Wide&apos;); -unity-background-scale-mode: scale-and-crop; background-color: rgb(2, 16, 39); justify-content: center; align-items: stretch;">
+        <ui:VisualElement name="LogoContainer" style="flex-direction: row; align-self: center; padding-left: 64px; padding-right: 64px; padding-top: 64px; padding-bottom: 64px; flex-shrink: 0; justify-content: center; position: absolute;">
+            <ui:VisualElement name="Logo" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/conestoga-logo.png?fileID=2800000&amp;guid=725ad1130f2b67e4aa3b4a9e13100cd2&amp;type=3#conestoga-logo&apos;); -unity-background-scale-mode: scale-to-fit; align-self: center; flex-shrink: 0; flex-grow: 0; height: 350px; width: 800px;" />
+            <ui:VisualElement name="Divider" class="underline" style="align-self: center; width: 3px; height: 210px;" />
+            <ui:Label text="CENTRE FOR VIRTUAL&#10;REALITY INNOVATION" name="LayoutTitle" display-tooltip-when-elided="true" class="h2" style="align-self: center; -unity-font-style: normal; -unity-text-align: upper-center; font-size: 28px; flex-shrink: 1; padding-left: 32px; padding-right: 32px; padding-top: 32px; padding-bottom: 32px; color: rgb(229, 229, 229);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LoadingSequenceGroup" style="bottom: 64px; align-self: center; flex-direction: column-reverse; align-items: center; position: absolute;">
+            <ui:Label text="Loading . . ." name="LoadingText" display-tooltip-when-elided="true" class="h3" style="align-self: center; -unity-font-style: normal; -unity-text-align: upper-center; color: rgb(193, 158, 103); font-size: 36px; display: none;" />
+            <ui:VisualElement name="LoadingIcon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/loading-spinner-icon.png?fileID=2800000&amp;guid=5d1cb41eca3711a4db06b264100cce6a&amp;type=3#loading-spinner-icon&apos;); -unity-background-scale-mode: scale-to-fit; width: 82px; height: 82px; display: flex;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

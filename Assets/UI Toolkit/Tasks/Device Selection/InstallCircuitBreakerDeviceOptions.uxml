@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <ui:Button name="BtnBreaker20A120V" view-data-key="Breaker20A120V" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Circuit%20Breaker/20A-120V-thumbnail.png?fileID=2800000&amp;guid=0f7e60a63a652e34eaab0e600a1ba4a1&amp;type=3#20A-120V-thumbnail&apos;); -unity-background-scale-mode: scale-to-fit;" />
+        <ui:Label text="20A 120V Single Pole Circuit Breaker" name="Label" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnBreaker15A120V" view-data-key="Breaker15A120V" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Circuit%20Breaker/15A-120V-thumbnail.png?fileID=2800000&amp;guid=1ec6b41111c7a934fb715de7269b4a2e&amp;type=3#15A-120V-thumbnail&apos;);" />
+        <ui:Label text="15A 120V Single Pole Circuit Breaker" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnBreakerAFCI" view-data-key="BreakerAFCI15A120V" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Circuit%20Breaker/AFCI-15A-120V-thumbnail.png?fileID=2800000&amp;guid=9441ef499ac66094bac3a90bac231f61&amp;type=3#AFCI-15A-120V-thumbnail&apos;);" />
+        <ui:Label text="15A 120V AFCI Single Pole Circuit Breaker" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnBreaker30A240V" view-data-key="Breaker30A240V" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Circuit%20Breaker/30A-240V-thumbnail.png?fileID=2800000&amp;guid=3c07340695d3ab049a28a26ac3f9008f&amp;type=3#30A-240V-thumbnail&apos;);" />
+        <ui:Label text="30A 240V Double Pole Circuit Breaker" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+</ui:UXML>

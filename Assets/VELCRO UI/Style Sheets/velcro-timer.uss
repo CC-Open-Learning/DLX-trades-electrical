@@ -1,0 +1,83 @@
+.timer {
+    width: 274px;
+    height: 88px;
+    transition-duration: 0.1s;
+    transition-property: translate;
+}
+
+.timer-body {
+    background-color: var(--timer-body-colour);
+}
+
+.timer-left-handle {
+    width: 28px;
+    height: 88px;
+    margin-right: 22px;
+    background-color: var(--timer-left-handle-colour);
+    border-width: 0;
+}
+
+.timer-left-handle:hover {
+    background-color: var(--timer-left-handle-colour);
+}
+
+.timer-arrow {
+    background-image: var(--timer-arrow);
+    width: 8.57px;
+    height: 14.58px;
+    -unity-background-image-tint-color: var(--timer-arrow-colour);
+}
+
+.timer-label-holder {
+    padding-top: 18px;
+}
+
+.timer-title-label {
+    font-size: 18px;
+    color: var(--timer-title-label-colour);
+}
+
+.timer-elapsed-time-label {
+    color: var(--timer-elapsed-time-label-colour);
+}
+
+.timer-closed {
+    translate: 247px 0;
+    transition-property: translate;
+    transition-duration: 0.1s;
+}
+
+.timer-closed-arrow {
+    scale: -1 1;
+}
+
+.timer-countdown {
+    --border-outer-colour: var(--timer-countdown-border-outer-colour);
+    --border-outer-colour-2: var(--timer-countdown-border-outer-colour-2);
+    --progress-colour: var(--timer-countdown-progress-colour);
+    --tracker-colour: var(--timer-countdown-tracker-colour);
+    width: 399px;
+    height: 399px;
+    background-color: var(--timer-countdown-background-colour);
+    border-radius: 200px;
+}
+
+.timer-countdown-label {
+    -unity-font-definition: var(--lato-black);
+    color: var(--timer-countdown-text-colour);
+    font-size: 128px;
+}
+
+.timer-gradient-container {
+    width: 274px;
+    height: 88px;
+    left: 0;
+    overflow: hidden;
+}
+
+.timer-gradient {
+    --top-left-colour: var(--timer-gradient-top);
+    --top-right-colour: var(--timer-gradient-top);
+    --bottom-left-colour: var(--timer-gradient-bottom);
+    --bottom-right-colour: var(--timer-gradient-bottom);
+}

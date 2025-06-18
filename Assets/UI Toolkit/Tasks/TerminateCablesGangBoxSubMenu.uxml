@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label tabindex="-1" text="Terminate Cables in Gang Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content">
+                <ui:VisualElement name="BackBtnLabel" class="nav-container">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label tabindex="-1" text="Terminate Cables in Boxes" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="NavLabelRunSupplyCable" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline" />
+                <ui:Label tabindex="-1" text="Select a conductor type to terminate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SelectBoxLabel" class="content-text" style="-unity-text-align: upper-center; font-size: 24px;" />
+                <ui:VisualElement name="SelectionContainer" class="container" style="flex-shrink: 0;">
+                    <ui:Button display-tooltip-when-elided="true" name="BtnBonds" parse-escape-sequences="true" view-data-key="TerminateGangBoxBonds" class="item-option task-button task-button__square">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/terminateGangBond.png?fileID=2800000&amp;guid=eef48d89de91e1046bb5ed29d819776c&amp;type=3#terminateGangBond&apos;); height: 215px; width: 254px; -unity-background-scale-mode: scale-and-crop; margin-top: 0;" />
+                        <ui:Label tabindex="-1" text="Bonds" display-tooltip-when-elided="true" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="AVAILABLE" display-tooltip-when-elided="true" name="LabelStatusAvailable" parse-escape-sequences="false" class="task-status__available status-label" />
+                        <ui:Label tabindex="-1" text="NOT AVAILABLE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label tabindex="-1" text="COMPLETE" display-tooltip-when-elided="true" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnNeutrals" view-data-key="TerminateGangBoxNeutrals" class="item-option task-button task-button__square">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="margin-top: 0; -unity-background-scale-mode: scale-and-crop; background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/terminateGangNutral.png?fileID=2800000&amp;guid=69abbebc197c8ef41b123cd7ff72747b&amp;type=3#terminateGangNutral&apos;); width: 249px;" />
+                        <ui:Label tabindex="-1" text="Neutrals" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelTitle" enable-rich-text="true" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="AVAILABLE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusAvailable" class="task-status__available status-label" />
+                        <ui:Label tabindex="-1" text="NOT AVAILABLE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label tabindex="-1" text="COMPLETE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnHots" view-data-key="TerminateGangBoxHots" class="item-option task-button task-button__square">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="-unity-background-scale-mode: scale-and-crop; background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/terminateGangHot.png?fileID=2800000&amp;guid=ce7736b764196f54990601ebd195b859&amp;type=3#terminateGangHot&apos;); margin-top: 0; width: 247px;" />
+                        <ui:Label tabindex="-1" text="Hots" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="AVAILABLE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusAvailable" class="task-status__available status-label" />
+                        <ui:Label tabindex="-1" text="NOT AVAILABLE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label tabindex="-1" text="COMPLETE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-progress.uss?fileID=7433441132597879392&amp;guid=3c0f4f2f7b301c74d874dbba436322f7&amp;type=3#velcro-progress" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="ProgressIndicator" class="progress-v2">
+        <ui:VisualElement name="Background" class="grow pt-16 pl-24 progress-v2-background pb-16 pr-24">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="fs-20 fw-400 progress-v2-title-label p-0 mt-0 mr-0" />
+            <ui:VisualElement name="ProgressHolder" class="flex-row align-items-center">
+                <ui:VisualElement name="ProgressBar" class="progress-v2-progress-bar grow">
+                    <ui:VisualElement name="Tracker" class="h-100 absolute w-100 progress-v2-progress-bar-tracker" />
+                    <ui:VisualElement name="Fill" class="h-100 absolute w-50 progress-v2-progress-bar-fill" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="1/4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressLabel" class="fs-16 fw-400 progress-v2-progress-label m-0 p-0" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

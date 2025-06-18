@@ -1,0 +1,109 @@
+.list {
+    width: 401px;
+}
+
+.list-header {
+    height: 187px;
+    background-color: var(--task-list-header-background-colour);
+    padding-right: 70px;
+}
+
+.list-border {
+    height: 2px;
+    background-color: var(--task-list-progress-bar-bottom-border-colour);
+}
+
+.list-title-label {
+    color: var(--task-list-title-label-colour);
+}
+
+.list-progress-label {
+    color: var(--task-list-progress-label-colour);
+}
+
+.list-progress-description {
+    font-size: 18px;
+    color: var(--task-list-progress-description-colour);
+}
+
+.list-progress-bar-tracker {
+    height: 8px;
+    background-color: var(--task-list-progress-bar-tracker-colour);
+    border-radius: 4px;
+    border-color: var(--task-list-progress-bar-tracker-border-colour);
+}
+
+.list-progress-bar-fill {
+    height: 8px;
+    background-color: var(--task-list-progress-bar-fill-colour);
+    border-radius: 4px;
+    border-color: var(--task-list-progress-bar-fill-border-colour);
+}
+
+.list-element {
+    height: 50px;
+    background-color: var(--task-list-element-background-colour);
+}
+
+.list-element-task-icon {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+    border-color: var(--task-list-element-icon-border-colour);
+}
+
+.list-element-task-icon-completed {
+    width: 18px;
+    height: 18px;
+    border-width: 0;
+    background-image: var(--task-list-element-icon-completed);
+}
+
+.list-element-task-label {
+    color: var(--task-list-element-title-label-colour);
+    -unity-font-definition: var(--lato-regular);
+}
+
+.list-element-task-label-completed {
+    color: var(--task-list-element-title-label-completed-colour);
+    -unity-font-definition: var(--lato-bold);
+}
+
+.list-element-hint {
+    width: 36px;
+    height: 36px;
+    background-color: var(--task-list-element-hint-colour);
+}
+
+.list-element-hint:hover {
+    background-color: var(--task-list-element-hint-hover-colour);
+}
+
+.list-element-hint:hover > .list-element-hint-icon {
+    -unity-background-image-tint-color: var(--task-list-element-hint-icon-hover-colour);
+}
+
+.list-element-hint:disabled {
+    opacity: 1;
+}
+
+.list-element-hint:disabled:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.list-element-hint:disabled:hover > .list-element-hint-icon {
+    -unity-background-image-tint-color: var(--task-list-element-hint-icon-completed-colour);
+}
+
+.list-element-hint-icon {
+    width: 28px;
+    height: 27px;
+    background-image: var(--task-list-element-hint-icon);
+    -unity-background-image-tint-color: var(--task-list-element-hint-icon-colour);
+}
+
+.list-element-hint-icon-completed {
+    width: 28px;
+    height: 27px;
+    -unity-background-image-tint-color: var(--task-list-element-hint-icon-completed-colour);
+}

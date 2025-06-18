@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="BodySubBoxesFanBox" src="project://database/Assets/UI%20Toolkit/Tasks/Box%20Mounting/MountFanBoxOptions.uxml?fileID=9197481963319205126&amp;guid=7b47a76b389dc8a418a2c8fe42867a88&amp;type=3#MountFanBoxOptions" />
+    <ui:Template name="BodySubBoxesLightBox" src="project://database/Assets/UI%20Toolkit/Tasks/Box%20Mounting/MountLightBoxOptions.uxml?fileID=9197481963319205126&amp;guid=9c333a6f9a558624c8b614a8f2cb7e14&amp;type=3#MountLightBoxOptions" />
+    <ui:Template name="BodySubBoxesOutletBox" src="project://database/Assets/UI%20Toolkit/Tasks/Box%20Mounting/MountOutletBoxOptions.uxml?fileID=9197481963319205126&amp;guid=f110e6c093921ff4eae534b4ca72a871&amp;type=3#MountOutletBoxOptions" />
+    <ui:Template name="BodySubBoxesGangBox" src="project://database/Assets/UI%20Toolkit/Tasks/Box%20Mounting/MountGangBoxOptions.uxml?fileID=9197481963319205126&amp;guid=cbf42085431361d4abcefe370545e392&amp;type=3#MountGangBoxOptions" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TabView.uss?fileID=7433441132597879392&amp;guid=38b292bfa58ca214a85ec6e76bc6fcc6&amp;type=3#TabView" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window" style="width: 1180px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Select &amp; Mount Boxes" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="body-container main content">
+                <ui:VisualElement name="BackBtnContainer" class="nav-container">
+                    <ui:Button name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label text="My Tasks" name="NavLabelSelectTasks" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Tabs" class="tab-bar">
+                    <ui:Button name="MountFanBox" view-data-key="MountFanBox" class="tab-button">
+                        <ui:Label text="Fan Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="MountLightBox" view-data-key="MountLightBox" class="tab-button">
+                        <ui:Label text="Light Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="MountOutletBox" view-data-key="MountOutletBox" class="tab-button">
+                        <ui:Label text="Outlet Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="MountGangBox" view-data-key="MountGangBox" class="tab-button">
+                        <ui:Label text="Gang Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline tab-underline" />
+                <ui:Label text="Choose any option to preview" name="Instructions" class="instructions-text" />
+                <ui:VisualElement name="TabContainers" style="flex-grow: 1;">
+                    <ui:Instance template="BodySubBoxesFanBox" name="MountFanBoxOptions" view-data-key="MountFanBox" class="sub tab-container container" />
+                    <ui:Instance template="BodySubBoxesLightBox" name="MountLightBoxOptions" view-data-key="MountLightBox" class="sub tab-container container" style="display: flex;" />
+                    <ui:Instance template="BodySubBoxesOutletBox" name="MountOutletBoxOptions" view-data-key="MountOutletBox" class="sub tab-container container" style="display: flex;" />
+                    <ui:Instance template="BodySubBoxesGangBox" name="MountGangBoxOptions" view-data-key="MountGangBox" class="sub tab-container container" style="display: flex;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,273 @@
+.container {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task-button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(45, 45, 45);
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.task-button:hover:enabled {
+    border-left-color: rgb(255, 187, 9);
+    border-right-color: rgb(255, 187, 9);
+    border-top-color: rgb(255, 187, 9);
+    border-bottom-color: rgb(255, 187, 9);
+}
+
+.task-button:active:enabled {
+    background-color: rgb(105, 105, 105);
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-top-color: rgb(221, 221, 221);
+    border-bottom-color: rgb(221, 221, 221);
+}
+
+.task-button:disabled {
+    opacity: 0.5;
+}
+
+.task-button__square {
+    width: 256px;
+    height: 256px;
+}
+
+.task-button__wide {
+    width: 325px;
+    height: 256px;
+}
+
+.task-button__tall {
+    width: 450px;
+    height: 542px;
+}
+
+.task-button-indicator {
+    -unity-font: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular.ttf?fileID=12800000&guid=876a9438552962342bf2cea71952e2be&type=3#Lato-Regular');
+    -unity-font-definition: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular%20SDF.asset?fileID=11400000&guid=12ab6caf9aeda374381504c0d923ca08&type=2#Lato-Regular SDF');
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    background-color: rgba(53, 53, 53, 0.75);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.task-title {
+    -unity-font-style: bold;
+    font-size: 24px;
+    margin-left: 18px;
+    margin-right: 18px;
+    align-self: stretch;
+    -unity-text-align: upper-left;
+    white-space: normal;
+    margin-top: 18px;
+}
+
+.task-count {
+    font-size: 16px;
+    display: flex;
+    visibility: visible;
+    margin-left: 18px;
+    margin-right: 18px;
+    align-self: flex-start;
+    flex-grow: 1;
+    position: absolute;
+    bottom: 18px;
+}
+
+.task-status {
+    align-items: center;
+    width: 145px;
+    -unity-text-align: middle-center;
+    font-size: 14px;
+    left: 18px;
+    background-color: rgb(217, 217, 217);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    height: 35px;
+    display: flex;
+    position: relative;
+    bottom: auto;
+    margin-bottom: 18px;
+}
+
+.task-status__available {
+    background-color: rgb(217, 217, 217);
+}
+
+.task-status__not-available {
+    background-color: rgb(217, 217, 217);
+}
+
+.task-status__complete {
+    background-color: rgb(75, 193, 126);
+}
+
+.task-button__selected {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.task-button__selected .status-label {
+    background-color: rgb(217, 217, 217);
+}
+
+.task-status__in-progress {
+    background-color: rgb(255, 192, 9);
+}
+
+.status-label {
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    top: 10px;
+    position: absolute;
+    right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    display: flex;
+}
+
+.header-image {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(90, 90, 90);
+    -unity-background-image-tint-color: rgb(90, 90, 90);
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.header-image__bottom-border {
+    border-left-color: rgb(255, 192, 9);
+    border-right-color: rgb(255, 192, 9);
+    border-top-color: rgb(255, 192, 9);
+    border-bottom-color: rgb(255, 192, 9);
+    border-bottom-width: 2px;
+}
+
+.thumbnail-image {
+    height: 50%;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/Box%20icon.png?fileID=2800000&guid=8e6a658f09f62184c948dd41703dfb52&type=3#Box icon');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-top: 12px;
+}
+
+.thumbnail-image__square {
+    width: 190px;
+    height: 190px;
+    align-self: center;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.cable-route-text {
+    white-space: normal;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-overflow: clip;
+    align-self: stretch;
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: upper-left;
+}
+
+.cable-route-image {
+    top: -20px;
+    align-self: center;
+    width: 600px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 250px;
+    border-bottom-color: rgb(209, 209, 209);
+    border-bottom-width: 4px;
+}
+
+.divider {
+    flex-grow: 1;
+    background-color: rgb(255, 192, 9);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 80px;
+}
+
+.nav-label {
+    font-size: 22px;
+    -unity-font-style: bold;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.instructions-text {
+    font-size: 24px;
+    padding: 12px;
+    -unity-text-align: upper-center;
+    align-self: stretch;
+}

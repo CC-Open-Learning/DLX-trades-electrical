@@ -1,0 +1,103 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Toggle" src="project://database/Assets/VELCRO%20UI/Templates/Toggle/Toggle.uxml?fileID=9197481963319205126&amp;guid=99f9f23e8d3400747b660070e36d94d3&amp;type=3#Toggle" />
+    <ui:Template name="Slider" src="project://database/Assets/VELCRO%20UI/Templates/Slider/Slider.uxml?fileID=9197481963319205126&amp;guid=d161493787370dc449c32fd3187c47a1&amp;type=3#Slider" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-settingsmenu.uss?fileID=7433441132597879392&amp;guid=dfb8a0ae327a7f4428fa84341801292d&amp;type=3#velcro-settingsmenu" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <ui:VisualElement name="Canvas" class="grow justify-center align-items-center w-100">
+        <ui:VisualElement name="SettingsMenu" class="br-20 settings-menu-complex">
+            <ui:VisualElement name="Header">
+                <ui:VisualElement name="HeaderEnd" class="absolute w-100 br-tl-20 br-tr-20 header-end" />
+                <ui:VisualElement name="HeaderStart" class="header-start pr-32">
+                    <ui:Label text="Settings" name="Name" class="p-0 m-0 fs-36 fw-700 pl-32 grow w-100 text-align-middle-left header-label" />
+                </ui:VisualElement>
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseBtn" class="header-btn-close m-0 p-0 absolute" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Body" class="grow body mt-48 body-complex">
+                <ui:VisualElement name="ThemeContainer" class="flex-row grow align-items-center m-28">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-left" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end">
+                        <ui:Instance template="Toggle" name="ThemeToggle" class="mr-12 ml-12" />
+                        <ui:Label tabindex="-1" text="Dark" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeTag" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-center ml-12" style="width: 90px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SoundContainer" class="flex-row grow align-items-center m-28">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label text="Sound" name="SoundLabel" class="fw-700 fs-40 p-0 m-0 body-label text-align-middle-left" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end">
+                        <ui:VisualElement name="Blocker" class="mr-12" style="width: 90px;" />
+                        <ui:Instance template="Toggle" name="SoundToggle" class="mr-12 ml-12" />
+                        <ui:Label text="ON" name="SoundTag" class="fw-700 fs-40 m-0 p-0 body-label text-align-middle-right ml-12" style="width: 90px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="VolumeContainer" class="flex-row grow align-items-center m-28">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label tabindex="-1" text="Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="VolumeLabel" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-left" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end">
+                        <ui:VisualElement name="VolumeDown" class="body-volume-down mr-8" />
+                        <ui:VisualElement name="VolumeSliderContainer" class="slidercontainer justify-center body-slidecontainer mr-8 ml-8">
+                            <ui:Instance template="Slider" name="VolumeSlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" low-value="0.0001" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VolumeUp" class="body-volume-up ml-8" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SoundEffectContainer" class="flex-row grow align-items-center m-28 mt-48">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label tabindex="-1" text="Sound Effects" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SoundEffectLabel" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-left pl-48" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end pl-48">
+                        <ui:VisualElement name="VolumeDown" class="body-volume-down mr-8" />
+                        <ui:VisualElement name="SoundEffectSliderContainer" class="slidercontainer justify-center body-slidecontainer mr-8 ml-8">
+                            <ui:Instance template="Slider" name="SoundEffectSlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" low-value="0.0001" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VolumeUp" class="body-volume-up ml-8" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="DialogueContainer" class="flex-row grow align-items-center m-28 mb-48">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label tabindex="-1" text="Dialogue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DialogueLabel" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-left pl-48" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end pl-48">
+                        <ui:VisualElement name="VolumeDown" class="body-volume-down mr-8" />
+                        <ui:VisualElement name="DialogueSliderContainer" class="slidercontainer justify-center body-slidecontainer mr-8 ml-8">
+                            <ui:Instance template="Slider" name="DialogueSlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" low-value="0.0001" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VolumeUp" class="body-volume-up ml-8" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SensitivityContainer" class="flex-row grow align-items-center m-28">
+                    <ui:VisualElement name="Left" class="flex-row grow align-items-center w-50">
+                        <ui:Label tabindex="-1" text="Camera Sensitivity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SensitivityLabel" class="m-0 p-0 fw-700 fs-40 body-label text-align-middle-left" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow align-items-center w-50 justify-end">
+                        <ui:VisualElement name="SpeedDown" class="body-volume-down mr-8 body-speed-down" />
+                        <ui:VisualElement name="SensitivitySliderContainer" class="slidercontainer justify-center body-slidecontainer mr-8 ml-8">
+                            <ui:VisualElement name="MouseSensitivityDots" class="justify-space-between flex-row absolute mousesensitivity-dot-container body-dot-container w-100">
+                                <ui:VisualElement name="Dot" class="h-100 body-dot" />
+                                <ui:VisualElement name="Dot" class="h-100 body-dot" />
+                                <ui:VisualElement name="Dot" class="h-100 body-dot" />
+                                <ui:VisualElement name="Dot" class="h-100 body-dot" />
+                                <ui:VisualElement name="Dot" class="h-100 body-dot" />
+                            </ui:VisualElement>
+                            <ui:Instance template="Slider" name="SensitivitySlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SpeedUp" class="body-volume-up ml-8 body-speed-up" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Button-Primary-Large" src="project://database/Assets/VELCRO%20UI/Templates/Primary%20Button/Button-Primary-Large.uxml?fileID=9197481963319205126&amp;guid=47282cdbd7717774691bb11a42a24414&amp;type=3#Button-Primary-Large" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-informationdialog.uss?fileID=7433441132597879392&amp;guid=e4a78a6c8096c304094a2d95cc82e461&amp;type=3#velcro-informationdialog" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <ui:VisualElement name="Canvas" class="canvas br-20">
+        <ui:VisualElement name="TopLeftRectangle" class="topleftrectangle align-items-center justify-center pr-20 flex-row">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Primary" class="m-0 p-0 fw-700 fs-36 primarylabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TopBar" class="topbar align-self-end br-tr-20 absolute" />
+        <ui:VisualElement name="BodyContainer" class="grow align-items-center justify-center bodycontainer ml-40 mr-40 mt-36">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Secondary" class="p-0 m-0 fw-700 fs-36 secondarylabel text-wrap w-max-95" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonContainer" class="buttoncontainer align-items-center mt-32">
+            <ui:Instance template="Button-Primary-Large" name="Button-Primary-Large">
+                <AttributeOverrides element-name="Button" text="OK" />
+            </ui:Instance>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

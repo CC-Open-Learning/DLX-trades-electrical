@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-progress.uss?fileID=7433441132597879392&amp;guid=3c0f4f2f7b301c74d874dbba436322f7&amp;type=3#velcro-progress" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="Category" class="w-100 flex-row align-items-center pl-20 pr-32 pb-8 pt-12 progress-v1-category progress-v1-category-last">
+        <ui:VisualElement name="Progress" class="grow mr-48">
+            <ui:Label tabindex="-1" text="Progress 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="fs-20 fw-400 progress-v1-category-title-label m-0 p-0" />
+            <ui:VisualElement name="ProgressInfo" class="flex-row align-items-center grow">
+                <VARLab.Velcro.ProgressIndicatorV1Bar name="ProgressBar" class="mr-8 progress-v1-category-progress-bar w-100 grow" />
+                <ui:Label tabindex="-1" text="0/0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressLabel" class="fs-16 fw-400 progress-v1-category-progress-label m-0 p-0" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="ArrowHolder" class="m-0 p-0 align-items-center justify-center progress-v1-category-arrow-holder">
+            <ui:VisualElement name="Arrow" class="progress-v1-category-arrow progress-v1-category-arrow-closed" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="Bottom" class="w-100 progress-v1-category-bottom display-hidden" />
+    <ui:VisualElement name="TaskHolder" class="grow" />
+</ui:UXML>

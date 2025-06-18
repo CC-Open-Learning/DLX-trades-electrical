@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TabView.uss?fileID=7433441132597879392&amp;guid=38b292bfa58ca214a85ec6e76bc6fcc6&amp;type=3#TabView" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Welcome.uss?fileID=7433441132597879392&amp;guid=af2e6ecd7fa5846499dd58cfef668582&amp;type=3#Welcome" />
+    <ui:VisualElement name="Content" class="content-container">
+        <ui:VisualElement name="TopTextContainer" class="content-text" style="flex-direction: row; flex-grow: 0;">
+            <ui:VisualElement name="TextBodyContainer" style="flex-grow: 2;">
+                <ui:Label tabindex="-1" text="How to Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="h2" style="-unity-text-align: upper-center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" class="content-center" style="flex-grow: 1; flex-shrink: 0;">
+            <ui:VisualElement name="RowOne" class="row-flex">
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox" class="icon-rect" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/TutorialCamera_Sprite.png?fileID=21300000&amp;guid=6ee51cca9a5959942a6808f1d1d68970&amp;type=3#TutorialCamera_Sprite&apos;); -unity-background-scale-mode: scale-to-fit; background-color: rgb(99, 112, 110);" />
+                    <ui:Label tabindex="-1" text="Click and drag your mouse to look around" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text icon-text-med" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox" class="icon-rect">
+                        <ui:VisualElement name="ImageTextGroup" class="image-middled-stretched-vertically" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/ProjectSpecIconBlack.png?fileID=21300000&amp;guid=2e345b264269843459e87f7d553ce2f7&amp;type=3#ProjectSpecIconBlack&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="View &lt;b&gt;Project Specifications&lt;/b&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text icon-text-med" style="-unity-text-align: upper-center;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox" class="icon-rect">
+                        <ui:VisualElement name="Img" class="image-middled-stretched-vertically" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/TaskListBlackBackground.png?fileID=21300000&amp;guid=7f7a2bd5cebfbb3418c0f18d3255ffe5&amp;type=3#TaskListBlackBackground&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Select &lt;b&gt;Task List&lt;/b&gt; to begin installation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="icon-text icon-text-med" style="-unity-text-align: upper-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="RowTwo" class="row-flex" style="align-items: center;">
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox" class="icon-rect" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/SelectComponent.png?fileID=21300000&amp;guid=b836b4ee04a97144390ff69c7059f4c7&amp;type=3#SelectComponent&apos;);" />
+                    <ui:Label tabindex="-1" text="Choose task to complete" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text icon-text-med" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox" class="icon-rect" style="background-color: rgb(45, 45, 45); background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/PlaceComponent.png?fileID=21300000&amp;guid=c6209819250db3b46be249378f6072ce&amp;type=3#PlaceComponent&apos;);" />
+                    <ui:Label tabindex="-1" text="Complete task&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text icon-text-med" style="-unity-text-align: upper-center;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ImageWithOutsideText" class="image-text-container">
+                    <ui:VisualElement name="GrayBorderBox">
+                        <ui:VisualElement name="ImageTextGroup" class="icon-rect" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Welcome%20Page/SupervisorFeedback.png?fileID=21300000&amp;guid=c55aab55c31dfb14793679eeb2777652&amp;type=3#SupervisorFeedback&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Click to ask for feedback" parse-escape-sequences="true" display-tooltip-when-elided="true" class="icon-text icon-text-med" style="-unity-text-align: upper-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

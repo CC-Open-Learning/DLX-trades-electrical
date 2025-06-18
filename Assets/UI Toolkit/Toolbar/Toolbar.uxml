@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Toolbar.uss?fileID=7433441132597879392&amp;guid=257d02db1051c0d4f9a75e548797ba53&amp;type=3#Toolbar" />
+    <ui:VisualElement name="Toolbar" class="toolbar">
+        <ui:VisualElement name="ToolbarBackground" class="toolbar-background">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnProjectSpecs" class="toolbar-task-button">
+                <ui:VisualElement name="Icon" class="icon toolbar-button" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Toolbar/floor-plan.png?fileID=2800000&amp;guid=88b598e66e5dad84da978701394de8d3&amp;type=3#floor-plan&apos;);" />
+                <ui:Label tabindex="-1" text="Project Specifications" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="toolbar-button-label" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnTaskList" class="toolbar-task-button">
+                <ui:VisualElement name="Icon" class="icon toolbar-button" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Toolbar/tasks.png?fileID=2800000&amp;guid=892deec6318c3394a9a87f29217f5c71&amp;type=3#tasks&apos;);" />
+                <ui:Label tabindex="-1" text="Task List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="toolbar-button-label" />
+            </ui:Button>
+            <ui:VisualElement name="MenuSeparator" class="underline" style="align-self: stretch; margin-left: 36px; margin-right: 36px;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnHelp" class="toolbar-task-button" style="height: 120px;">
+                <ui:VisualElement name="Icon" class="icon toolbar-button" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Toolbar/help.png?fileID=2800000&amp;guid=b7f8932d5f89aec4f8b2b3ccd33f7fbf&amp;type=3#help&apos;);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnSettings" class="toolbar-task-button" style="height: 120px;">
+                <ui:VisualElement name="Icon" class="icon toolbar-button" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Toolbar/settings.png?fileID=2800000&amp;guid=b85e6b32250f09b4e9d6e9e3e4908f32&amp;type=3#settings&apos;);" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

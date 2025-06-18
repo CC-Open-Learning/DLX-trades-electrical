@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-progress.uss?fileID=7433441132597879392&amp;guid=3c0f4f2f7b301c74d874dbba436322f7&amp;type=3#velcro-progress" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="ProgressIndicator" class="progress-v3 br-20">
+        <Kamgam.UIToolkitGlow.Glow name="Glow" width-left="-1" width="1" outer-color="#FFCD2900" inner-color="#FFCD29BF" split-width="true" width-right="3.5" width-bottom="6.5" width-top="-1" overlap-width="0" class="grow br-20">
+            <ui:VisualElement name="ProgressContainer" class="pt-48 grow progress-v3-container">
+                <ui:Label tabindex="-1" text="My Progress" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="fs-40 fw-700 text-align-middle-left progress-v3-title-label p-0 mt-0 mb-0 mr-0" />
+                <ui:VisualElement name="Info" class="grow progress-v3-info">
+                    <ui:VisualElement name="Top" class="pb-16">
+                        <ui:Label tabindex="-1" text="Task 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TaskTitle" class="fw-400 fs-20 progress-v3-task-title m-0 p-0 mb-16" />
+                        <ui:Label tabindex="-1" text="0/ 00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressLabel" class="fw-900 fs-36 progress-v3-task-progress-label m-0 p-0" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Divider" class="w-100 progress-v3-info-divider" />
+                    <ui:VisualElement name="Middle" class="pt-20 pb-16">
+                        <ui:Label tabindex="-1" text="First Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FirstLabel" class="fw-400 fs-20 progress-v3-info-label-first m-0 p-0 mb-8" />
+                        <ui:Label tabindex="-1" text="Second Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondLabel" class="fw-400 fs-20 progress-v3-info-label-second m-0 p-0 mb-12" />
+                        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NumberLabel" class="fs-40 fw-900 progress-v3-info-number-label m-0 p-0" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Divider" class="w-100 progress-v3-info-divider" />
+                    <ui:VisualElement name="Bottom" class="grow pt-20">
+                        <ui:Label tabindex="-1" text="Time Running" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TimeRunningLabel" class="fs-20 fw-400 progress-v3-time-title-label m-0 p-0 mb-24" />
+                        <ui:Label tabindex="-1" text="0 hr 00 mins" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ElapsedTimeLabel" class="fs-40 fw-900 progress-v3-time-elapsed-label m-0 p-0" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </Kamgam.UIToolkitGlow.Glow>
+    </ui:VisualElement>
+</ui:UXML>

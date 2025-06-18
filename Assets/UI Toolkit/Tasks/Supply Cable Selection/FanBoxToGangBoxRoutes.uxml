@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnFanToGangA" enable-rich-text="true" view-data-key="FanToGangA" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/FanBoxToGangBoxCorrect.png?fileID=2800000&amp;guid=4ab4d3d4519ef1b408bf79698fc631b1&amp;type=3#FanBoxToGangBoxCorrect&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: through holes in joists&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loops: at each box&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: through joists and stapled at each box&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="A" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnFanToGangB" enable-rich-text="true" view-data-key="FanToGangB" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/FanBoxToGangBoxIncorrect1.png?fileID=2800000&amp;guid=42a95bbb48f855043979799e5e1ddcd4&amp;type=3#FanBoxToGangBoxIncorrect1&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: through holes in joists&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loop: midway between the two boxes&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: through joists and stapled at each box&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="B" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnFanToGangC" enable-rich-text="true" view-data-key="FanToGangC" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/FanBoxToGangBoxIncorrect2.png?fileID=2800000&amp;guid=8c7ac1afcb4403149b5ddba305c0787a&amp;type=3#FanBoxToGangBoxIncorrect2&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: through holes in joists&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loops: none&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: through joists, stapled next to every joist hole and at each box&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="C" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+</ui:UXML>

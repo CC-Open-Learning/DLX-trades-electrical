@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Settings.uss?fileID=7433441132597879392&amp;guid=fed72b0d493a6fb459bd636f1ef44946&amp;type=3#Settings" />
+    <ui:VisualElement name="Screen" class="screen modal-light">
+        <ui:VisualElement name="Window" class="window" style="width: 820px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="Background" class="header-background">
+                    <ui:Label text="Settings" name="HeaderText" display-tooltip-when-elided="true" class="h1 header-text" />
+                </ui:VisualElement>
+                <ui:Button display-tooltip-when-elided="true" name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content" style="flex-grow: 0;">
+                <ui:Label text="Simulation" name="SimulationSectionHeader" display-tooltip-when-elided="true" class="h2" />
+                <ui:VisualElement name="SimulationOptions" class="settings-section">
+                    <ui:VisualElement name="MeasurementUnitsOption" class="settings-element">
+                        <ui:Label tabindex="-1" text="Units of Measure" parse-escape-sequences="true" display-tooltip-when-elided="true" class="settings-element__label" />
+                        <ui:Button text="Imperial (inches)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnMeasurementUnits" class="settings-button" style="width: 50%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Slider picking-mode="Ignore" label="Mouse Sensitivity" value="42" high-value="100" name="SliderMouseSensitivity" class="settings-element" />
+                <ui:VisualElement name="Underline" class="underline" />
+                <ui:Label text="Graphics" name="GraphicsSectionHeader" display-tooltip-when-elided="true" class="h2" />
+                <ui:VisualElement name="GraphicsOptions" class="settings-section">
+                    <ui:VisualElement name="QualityOption" class="settings-element">
+                        <ui:Label tabindex="-1" text="Quality" parse-escape-sequences="true" display-tooltip-when-elided="true" class="settings-element__label" />
+                        <ui:VisualElement style="flex-direction: row; flex-grow: 1; align-items: stretch; justify-content: space-between; width: 50%;">
+                            <ui:Button text="Low" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnQualityLow" class="settings-button" />
+                            <ui:Button text="High" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnQualityHigh" class="settings-button" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Slider label="Brightness" name="SliderBrightness" picking-mode="Ignore" class="settings-element" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

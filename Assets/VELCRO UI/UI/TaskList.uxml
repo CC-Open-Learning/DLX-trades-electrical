@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-list.uss?fileID=7433441132597879392&amp;guid=a2cfe85a4b931434394ea4b20e35af70&amp;type=3#velcro-list" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="TaskList" class="list">
+        <ui:VisualElement name="Header" class="list-header br-tl-20 br-tr-20 pl-20 pt-24">
+            <ui:Label tabindex="-1" text="Title" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="p-0 fs-28 fw-700 mt-0 ml-0 mr-0 mb-12 list-title-label" />
+            <ui:Label tabindex="-1" text="Progress (0/00)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressLabel" class="p-0 fw-700 fs-36 mt-0 ml-0 mr-0 mb-8 list-progress-label" />
+            <ui:Label tabindex="-1" text="Description" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ProgressDescription" class="p-0 fw-400 list-progress-description mt-0 mr-0 ml-0 mb-16" />
+            <ui:VisualElement name="ProgressBar">
+                <ui:VisualElement name="Tracker" class="list-progress-bar-tracker absolute w-100 bw-1" />
+                <ui:VisualElement name="Fill" class="absolute list-progress-bar-fill bw-1" style="width: 50%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Border" class="list-border" />
+        <ui:VisualElement name="TaskHolder" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-loading.uss?fileID=7433441132597879392&amp;guid=8a686386aaee75748bc51423b204496b&amp;type=3#velcro-loading" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="LoadingContainer" class="align-items-center loading-container absolute">
+        <VARLab.Velcro.RadialLoadingProgress name="RadialLoadingProgress" class="loading-indicator justify-center align-items-center loading-indicator-failed" />
+        <ui:Label tabindex="-1" text="Loading..." parse-escape-sequences="true" display-tooltip-when-elided="true" name="LoadingTextLabel" class="fw-400 text-align-middle-center loading-indicator__label m-0 p-0" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Widget.uss?fileID=7433441132597879392&amp;guid=787c5b13e00ed0a4e93cdd849d2107a5&amp;type=3#Widget" />
+    <ui:VisualElement name="Container" class="widget-container">
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnMove">
+            <ui:VisualElement name="Icon" class="button-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Move%20icon.png?fileID=2800000&amp;guid=f5075f16b2e212144bec5a0f547f1d4d&amp;type=3#Move icon&apos;);" />
+            <ui:Label tabindex="-1" text="Move Outlet Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" />
+        </ui:Button>
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnReplace">
+            <ui:VisualElement name="Icon" class="button-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Replace%20icon.png?fileID=2800000&amp;guid=369d60ee2c105ca44929df77b2dc29e3&amp;type=3#Replace icon&apos;);" />
+            <ui:Label tabindex="-1" text="Replace Outlet Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" />
+        </ui:Button>
+        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnGoBack">
+            <ui:VisualElement name="Icon" class="button-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/BackIcon.png?fileID=2800000&amp;guid=376a87feb5adf3741a23cb63a3be04ed&amp;type=3#BackIcon&apos;);" />
+            <ui:Label tabindex="-1" text="Go Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

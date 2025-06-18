@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Package/UI%20Toolkit/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <Style src="project://database/Assets/Package/UI%20Toolkit/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <ui:VisualElement name="Container" class="flex-row">
+        <ui:Label tabindex="-1" text="Radio Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="button-radio-label" />
+        <ui:RadioButton label="Radio Button" name="RadioButton" class="button-radio button-hide-label" />
+    </ui:VisualElement>
+</ui:UXML>

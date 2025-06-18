@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-components.uss?fileID=7433441132597879392&amp;guid=360350781794bd14f942000338374586&amp;type=3#velcro-components" />
+    <ui:VisualElement name="Header" class="flex-row w-100">
+        <ui:VisualElement name="HeaderEnd" class="absolute w-100 header-end br-tl-20 br-tr-20" style="flex-grow: 1;" />
+        <ui:VisualElement name="HeaderStart" class="header-start">
+            <ui:Label tabindex="-1" text="[Name]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" class="fw-700 fs-36 m-0 p-0 grow text-align-middle-left pl-20 header-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

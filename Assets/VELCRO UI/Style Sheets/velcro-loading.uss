@@ -1,0 +1,31 @@
+.loading-container {
+    min-width: 210px;
+}
+
+.loading-indicator {
+    --track-colour: var(--loading-indicator-track-colour);
+    --progress-colour: var(--loading-indicator-progress-colour);
+    --border-colour: var(--loading-indicator-border-colour);
+    min-width: 210px;
+    min-height: 210px;
+}
+
+.loading-indicator__label {
+    -unity-text-align: middle-left;
+    color: var(--loading-indicator-label-colour);
+    font-size: 64px;
+    -unity-font-definition: var(--lato-bold);
+    letter-spacing: -5px;
+}
+
+.loading-indicator-failed {
+    --track-colour: var(--loading-indicator-failed-track-colour);
+}
+
+.loading-indicator-failed-icon {
+    width: 116px;
+    height: 116px;
+    background-image: var(--loading-indicator-failed-icon);
+    -unity-background-image-tint-color: var(--loading-indicator-failed-icon-colour);
+    position: absolute;
+}

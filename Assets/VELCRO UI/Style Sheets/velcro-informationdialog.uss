@@ -1,0 +1,37 @@
+.canvas {
+    width: 1000px;
+    height: 500px;
+    background-color: var(--information-dialog-canvas-color);
+}
+
+.topleftrectangle {
+    width: 289px;
+    height: 75px;
+    background-image: var(--information-dialog-top-left-rectangle);
+    -unity-background-image-tint-color: var(--information-dialog-top-left-rectangle-tint-color);
+}
+
+.topbar {
+    height: 24px;
+    width: 750px;
+    background-color: var(--information-dialog-top-left-rectangle-tint-color);
+}
+
+.primarylabel {
+    max-width: 225px;
+    max-height: initial;
+    color: var(--information-dialog-primary-label-color);
+}
+
+.buttoncontainer {
+    height: 110px;
+}
+
+.secondarylabel {
+    color: var(--informaton-dialog-secondary-label-color);
+    max-height: 95%;
+}
+
+.bodycontainer {
+    overflow: hidden;
+}

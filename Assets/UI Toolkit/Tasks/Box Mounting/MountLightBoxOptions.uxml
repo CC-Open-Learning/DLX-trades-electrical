@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <ui:Button name="BtnRoundBox" view-data-key="RoundBox" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/RoundBox.png?fileID=2800000&amp;guid=ef16dd489daf4b64a8896b83f84e8512&amp;type=3#RoundBox&apos;);" />
+        <ui:Label tabindex="-1" text="4 x 1/4&quot; Round Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLabel" class="content-text" />
+        <ui:Label tabindex="-1" text="INSTALLED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" style="display: flex;" />
+    </ui:Button>
+    <ui:Button name="BtnSquareBox" view-data-key="SquareBox" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/4-11-16SquareBox.png?fileID=2800000&amp;guid=f4af2bfb6ffe0f944b3c46d1e1a74e23&amp;type=3#4-11-16SquareBox&apos;);" />
+        <ui:Label tabindex="-1" text="4-11/16&quot; Square Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLabel" class="content-text" />
+        <ui:Label tabindex="-1" text="INSTALLED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" style="display: flex;" />
+    </ui:Button>
+    <ui:Button name="BtnOctagonalBox" view-data-key="OctagonalBox" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/LightBox.png?fileID=2800000&amp;guid=e97cf0849b81cca428a910cdd6f4ac20&amp;type=3#LightBox&apos;);" />
+        <ui:Label tabindex="-1" text="4 x 1-1/2&quot; Octagonal Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLabel" class="content-text" />
+        <ui:Label tabindex="-1" text="INSTALLED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" style="display: flex;" />
+    </ui:Button>
+    <ui:Button name="BtnOctagonalBracketBox" view-data-key="OctagonalBracketBox" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/LightBoxWithBracket.png?fileID=2800000&amp;guid=bea43e5d1339f8449926268b7a8fd3ab&amp;type=3#LightBoxWithBracket&apos;);" />
+        <ui:Label tabindex="-1" text="4 x 1-1/2&quot; Octagonal Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLabel" class="content-text" />
+        <ui:Label tabindex="-1" text="INSTALLED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" style="display: flex;" />
+    </ui:Button>
+</ui:UXML>

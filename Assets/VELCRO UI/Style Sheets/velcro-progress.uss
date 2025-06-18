@@ -1,0 +1,247 @@
+.progress-v1 {
+    width: 450px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.progress-v1-header-background {
+    height: 38px;
+    background-color: var(--progress-v1-header-back-colour);
+}
+
+.progress-v1-header-bar {
+    height: 38px;
+    background-color: var(--progress-v1-header-front-colour);
+}
+
+.progress-v1-header-background-2 {
+    height: 21px;
+    background-color: var(--progress-v1-header-back-colour);
+    top: 17px;
+}
+
+.progress-v1-header-title-holder {
+    width: 187px;
+    height: 38px;
+    background-image: var(--progress-v1-header-title-holder);
+    -unity-background-image-tint-color: var(--progress-v1-header-front-colour);
+    border-bottom-right-radius: 51px;
+}
+
+.progress-v1-header-title-label {
+    font-size: 18px;
+    color: var(--progress-v1-header-title-colour);
+}
+
+.progress-v1-category {
+    height: 70px;
+    transition-property: height;
+    transition-duration: 0.1s;
+    background-color: var(--progress-v1-category-background-colour);
+}
+
+.progress-v1-category-progress-bar {
+}
+
+.progress-v1-category-title-label {
+    color: var(--progress-v1-category-label-name-colour);
+    margin-left: 6px;
+}
+
+.progress-v1-category-arrow-holder {
+    width: 48px;
+    height: 48px;
+    border-width: 0;
+    background-color: var(--progress-v1-category-arrow-holder-colour);
+}
+
+.progress-v1-category-progress-label {
+    color: var(--progress-v1-category-label-progress-colour);
+}
+
+.progress-v1-category-arrow {
+    background-image: var(--progress-v1-category-arrow);
+    width: 24px;
+    height: 13.63px;
+    transition-property: rotate;
+    transition-duration: 0.1s;
+    -unity-background-image-tint-color: var(--progress-v1-category-arrow-colour);
+}
+
+.progress-v1-category-arrow-closed {
+    rotate: 180deg;
+    transition-property: rotate;
+    transition-duration: 0.1s;
+}
+
+.progress-v1-category-bottom {
+    height: 1px;
+    background-color: var(--progress-v1-category-bottom-colour);
+}
+
+.progress-v1-category-last {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.progress-v1-category-last-bottom {
+    display: none;
+}
+
+.progress-v1-category-progress-bar {
+    width: 290px;
+    height: 8px;
+}
+
+.progress-v1-category-progress-bar > .progress-indicator-v1-bar-background {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    background-color: var(--progress-v1-category-progress-background-colour);
+    border-width: 1px;
+    border-color: var(--progress-v1-category-progress-background-border-colour);
+    border-radius: 4px;
+}
+
+.progress-v1-category-progress-bar > .progress-indicator-v1-bar-fill {
+    height: 8px;
+    position: absolute;
+    background-color: var(--progress-v1-category-progress-fill-colour);
+    border-color: var(--progress-v1-category-progress-fill-border-colour);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.progress-v1-task {
+    height: 48px;
+    background-color: var(--progress-v1-task-background-colour);
+}
+
+.progress-v1-task-label {
+    color: var(--progress-v1-task-label-name-colour);
+}
+
+.progress-v1-task-completed-label {
+    color: var(--progress-v1-task-completed-label-name-colour);
+}
+
+.progress-v1-task-progress-label {
+    color: var(--progress-v1-task-label-progress-colour);
+}
+
+.progress-v1-task-progress-label-highlight {
+    color: var(--progress-v1-task-label-progress-highlight-colour);
+}
+
+.progress-v1-task-checkmark {
+    height: 32px;
+    width: 32px;
+    border-color: var(--progress-v1-task-checkmark-border-colour);
+    border-width: 2px;
+    border-radius: 16px;
+}
+
+.progress-v1-task-checkmark-checked {
+    background-color: var(--progress-v1-task-checkmark-colour);
+}
+
+.progress-v1-task-checkmark-checked-icon {
+    background-image: var(--progress-v1-task-checkmark-icon);
+    -unity-background-image-tint-color: var(--progress-v1-task-checkmark-icon-colour);
+    visibility: hidden;
+}
+
+.progress-v2 {
+    width: 395px;
+    height: 95px;
+}
+
+.progress-v2-background {
+    background-color: var(--progress-v2-background-colour);
+}
+
+.progress-v2-title-label {
+    color: var(--progress-v2-title-label-colour);
+    margin-left: 6px;
+    margin-bottom: 7px;
+}
+
+.progress-v2-progress-bar {
+    height: 8px;
+    margin-right: 5px;
+}
+
+.progress-v2-progress-bar-tracker {
+    border-radius: 4px;
+    background-color: var(--progress-v2-progress-bar-tracker-colour);
+    border-color: var(--progress-v2-progress-bar-tracker-border-colour);
+    border-width: 1px;
+}
+
+.progress-v2-progress-bar-fill {
+    border-radius: 4px;
+    background-color: var(--progress-v2-progress-bar-fill-colour);
+    border-color: var(--progress-v2-progress-bar-fill-border-colour);
+    border-width: 1px;
+}
+
+.progress-v2-progress-label {
+    color: var(--progress-v2-progress-label-colour);
+    margin-bottom: 4px;
+}
+
+.progress-v3 {
+    width: 302px;
+    height: 665px;
+    --glow-colour-inner: var(--progress-v3-glow-colour-inner);
+    --glow-colour-outer: var(--progress-v3-glow-colour-outer);
+    background-color: var(--progress-v3-background-colour);
+}
+
+.progress-v3-container {
+    overflow: hidden;
+}
+
+.progress-v3-title-label {
+    color: var(--progress-v3-text-colour-1);
+    margin-left: 42px;
+}
+
+.progress-v3-info {
+    padding-top: 64px;
+    padding-left: 64px;
+}
+
+.progress-v3-info-divider {
+    height: 1px;
+    background-color: var(--progress-v3-divider-colour);
+}
+
+.progress-v3-task-title {
+    color: var(--progress-v3-text-colour-1);
+}
+
+.progress-v3-task-progress-label {
+    color: var(--progress-v3-text-colour-1);
+}
+
+.progress-v3-info-label-first {
+    color: var(--progress-v3-text-colour-2);
+}
+
+.progress-v3-info-label-second {
+    color: var(--progress-v3-text-colour-2);
+}
+
+.progress-v3-info-number-label {
+    color: var(--progress-v3-text-colour-1);
+}
+
+.progress-v3-time-title-label {
+    color: var(--progress-v3-text-colour-2);
+}
+
+.progress-v3-time-elapsed-label {
+    letter-spacing: -4px;
+    color: var(--progress-v3-text-colour-1);
+}

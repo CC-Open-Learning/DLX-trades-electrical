@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.ShortcutManagement" elementFormDefault="qualified" targetNamespace="Kamgam.UIToolkitGlow" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
+  <xs:complexType name="GlowType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:attribute default="30" name="width" type="xs:float" use="optional" />
+        <xs:attribute default="0.2" name="overlap-width" type="xs:float" use="optional" />
+        <xs:attribute default="false" name="split-width" type="xs:boolean" use="optional" />
+        <xs:attribute default="30" name="width-left" type="xs:float" use="optional" />
+        <xs:attribute default="30" name="width-top" type="xs:float" use="optional" />
+        <xs:attribute default="30" name="width-right" type="xs:float" use="optional" />
+        <xs:attribute default="30" name="width-bottom" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="offset-x" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="offset-y" type="xs:float" use="optional" />
+        <xs:attribute default="false" name="offset-everything" type="xs:boolean" use="optional" />
+        <xs:attribute default="1" name="scale-x" type="xs:float" use="optional" />
+        <xs:attribute default="1" name="scale-y" type="xs:float" use="optional" />
+        <xs:attribute default="RGBA(0.000, 1.000, 1.000, 0.500)" name="inner-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 1.000, 1.000, 0.000)" name="outer-color" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="inherit-border-colors" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="force-subdivision" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="preserve-hard-corners" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="fill-center" type="xs:boolean" use="optional" />
+        <xs:attribute default="15" name="vertex-distance" type="xs:float" use="optional" />
+        <xs:attribute default="false" name="layout-first-child" type="xs:boolean" use="optional" />
+        <xs:attribute name="animation-name" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Glow" substitutionGroup="engine:VisualElement" xmlns:q1="Kamgam.UIToolkitGlow" type="q1:GlowType" />
+  <xs:complexType name="ShadowType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="engine:VisualElement" />
+        </xs:sequence>
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:attribute default="30" name="blur-width" type="xs:float" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 0.400)" name="inner-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 0.000)" name="outer-color" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="offset-x" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="offset-y" type="xs:float" use="optional" />
+        <xs:attribute default="1" name="scale-x" type="xs:float" use="optional" />
+        <xs:attribute default="1" name="scale-y" type="xs:float" use="optional" />
+        <xs:attribute default="15" name="vertex-distance" type="xs:float" use="optional" />
+        <xs:attribute default="false" name="layout-first-child" type="xs:boolean" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Shadow" substitutionGroup="engine:VisualElement" xmlns:q2="Kamgam.UIToolkitGlow" type="q2:ShadowType" />
+</xs:schema>

@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9048749187968110440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1728593302932306602, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0711
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728593302932306602, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0229
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0327
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.43046007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4304589
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5609861
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.56098473
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907891832892188338, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012682451040910744, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0395
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242754923798000072, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: <TerminationTask>k__BackingField
+      value: 204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319087475374653770, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: <TerminationTask>k__BackingField
+      value: 204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414412974474291398, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: tooltipUI
+      value: 
+      objectReference: {fileID: 4948586707805738126}
+    - target: {fileID: 5690249722114569692, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120591835415046326, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: tooltipUI
+      value: 
+      objectReference: {fileID: 4948586707805738126}
+    - target: {fileID: 6444887422639464553, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: tooltipUI
+      value: 
+      objectReference: {fileID: 4948586707805738126}
+    - target: {fileID: 7449410043869576143, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: <TerminationTask>k__BackingField
+      value: 204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628728906957758829, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_Name
+      value: Selection Orbs Fan Switches
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870764820475333251, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923690969130444963, guid: 4ba24553459faeb4b986678e884a76ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ba24553459faeb4b986678e884a76ce, type: 3}
+--- !u!114 &4948586707805738126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4125143421139196902, guid: 4ba24553459faeb4b986678e884a76ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 9048749187968110440}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45f7be31d823e6479bbf176a19a659d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

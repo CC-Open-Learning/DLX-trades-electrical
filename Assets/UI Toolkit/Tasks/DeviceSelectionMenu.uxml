@@ -1,0 +1,59 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="InstallFanDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallFanDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=8fe4c2e240e5a9c4f96b9f1bfae0578a&amp;type=3#InstallFanDeviceOptions" />
+    <ui:Template name="InstallFanSwitchDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallFanSwitchDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=74cf148f096d74a4fac5e4150e372bff&amp;type=3#InstallFanSwitchDeviceOptions" />
+    <ui:Template name="InstallLightSwitchDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallLightSwitchDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=ab72b7f5c347fc048b4581b5ca802437&amp;type=3#InstallLightSwitchDeviceOptions" />
+    <ui:Template name="InstallCircuitBreakerDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallCircuitBreakerDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=ac6c64760078c9a439d5bf856355e281&amp;type=3#InstallCircuitBreakerDeviceOptions" />
+    <ui:Template name="InstallLightDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallLightDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=e9b43e6eb09adc84081350b46991b983&amp;type=3#InstallLightDeviceOptions" />
+    <ui:Template name="InstallOutletDeviceOptions" src="project://database/Assets/UI%20Toolkit/Tasks/Device%20Selection/InstallOutletDeviceOptions.uxml?fileID=9197481963319205126&amp;guid=ccf6e43f978cb8b44bcc4007c8cbc79f&amp;type=3#InstallOutletDeviceOptions" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TabView.uss?fileID=7433441132597879392&amp;guid=38b292bfa58ca214a85ec6e76bc6fcc6&amp;type=3#TabView" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window" style="width: 1180px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label name="HeaderText" text="Select &amp; Install Devices" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="body-container main content">
+                <ui:VisualElement name="BackBtnContainer" class="nav-container">
+                    <ui:Button name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label text="My Tasks" name="NavLabelSelectTasks" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Tabs" class="tab-bar">
+                    <ui:Button name="InstallExhaustFan" view-data-key="InstallFan" class="tab-button">
+                        <ui:Label text="Exhaust Fan" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="InstallLight" view-data-key="InstallLight" class="tab-button">
+                        <ui:Label text="Light" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="InstallOutlet" view-data-key="InstallOutlet" class="tab-button">
+                        <ui:Label text="Outlet" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="InstallLightSwitch" view-data-key="InstallLightSwitch" class="tab-button">
+                        <ui:Label text="Light Switch" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="InstallFanSwitch" view-data-key="InstallFanSwitch" class="tab-button">
+                        <ui:Label text="Fan Switch" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="InstallCircuitBreaker" view-data-key="InstallBreaker" class="tab-button">
+                        <ui:Label text="Circuit Breaker" name="Label" class="tab-title" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline tab-underline" />
+                <ui:Label text="Choose any option to preview" name="Instructions" class="instructions-text" />
+                <ui:VisualElement name="TabContainers" style="flex-grow: 1;">
+                    <ui:Instance template="InstallFanDeviceOptions" name="InstallFanDeviceOptions" view-data-key="InstallFan" class="container tab-container" />
+                    <ui:Instance template="InstallFanSwitchDeviceOptions" name="InstallFanSwitchDeviceOptions" view-data-key="InstallFanSwitch" class="container tab-container" />
+                    <ui:Instance template="InstallLightSwitchDeviceOptions" name="InstallLightSwitchDeviceOptions" view-data-key="InstallLightSwitch" class="container tab-container" />
+                    <ui:Instance template="InstallCircuitBreakerDeviceOptions" name="InstallCircuitBreakerDeviceOptions" view-data-key="InstallBreaker" class="container tab-container" />
+                    <ui:Instance template="InstallLightDeviceOptions" name="InstallLightDeviceOptions" view-data-key="InstallLight" class="container tab-container" />
+                    <ui:Instance template="InstallOutletDeviceOptions" name="InstallOutletDeviceOptions" view-data-key="InstallOutlet" class="container tab-container" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

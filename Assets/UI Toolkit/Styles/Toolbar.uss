@@ -1,0 +1,142 @@
+.icon-colour-transition {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.Yellow-Blink {
+    -unity-background-image-tint-color: rgb(231, 176, 46);
+    width: 84px;
+    height: 84px;
+    transition-property: all, ignored;
+    transition-duration: 1s, 0s;
+    transition-timing-function: ease-in-out, ease;
+    transition-delay: 0s, 0s;
+}
+
+.toolbar {
+    width: 162px;
+    height: 100%;
+}
+
+.toolbar-background {
+    background-color: rgb(18, 18, 18);
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-start;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    flex-grow: 1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.toolbar-button {
+    background-color: rgba(188, 188, 188, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.toolbar-button:enabled:hover {
+    -unity-background-image-tint-color: rgba(255, 192, 9, 0.5);
+    cursor: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-hand.png?fileID=2800000&guid=cfc2e70cdd830b24789c2a1c10170916&type=3#cursor-hand');
+}
+
+.toolbar-button:enabled:active {
+    -unity-background-image-tint-color: rgb(255, 192, 9);
+    cursor: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-hand.png?fileID=2800000&guid=cfc2e70cdd830b24789c2a1c10170916&type=3#cursor-hand');
+}
+
+.toolbar-button:disabled {
+    opacity: 0.4;
+}
+
+.toolbar-task-button {
+    flex-grow: 0;
+    height: 160px;
+    justify-content: center;
+    flex-direction: column;
+    top: auto;
+    position: relative;
+    margin-top: 0;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: stretch;
+    cursor: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-hand.png?fileID=2800000&guid=cfc2e70cdd830b24789c2a1c10170916&type=3#cursor-hand');
+}
+
+.toolbar-task-button:enabled:hover {
+    border-left-color: rgba(255, 192, 9, 0.5);
+}
+
+.toolbar-task-button:enabled:active {
+    border-left-color: rgb(255, 192, 9);
+}
+
+.toolbar-task-button__selected {
+    border-left-color: rgb(255, 192, 9);
+}
+
+.toolbar-button-label {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    white-space: normal;
+    -unity-font-definition: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular%20SDF.asset?fileID=11400000&guid=12ab6caf9aeda374381504c0d923ca08&type=2#Lato-Regular SDF');
+    -unity-font: url('project://database/Packages/com.varlab.standarduilibrary/Runtime/Fonts/Lato-Regular.ttf?fileID=12800000&guid=876a9438552962342bf2cea71952e2be&type=3#Lato-Regular');
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-hand.png?fileID=2800000&guid=cfc2e70cdd830b24789c2a1c10170916&type=3#cursor-hand');
+    -unity-text-align: upper-center;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+}
+
+.toolbar-task-button:enabled:hover .icon {
+    -unity-background-image-tint-color: rgb(231, 166, 32);
+    cursor: url('project://database/Assets/Art/Sprites/UI/Mouse%20Cursors/cursor-hand.png?fileID=2800000&guid=cfc2e70cdd830b24789c2a1c10170916&type=3#cursor-hand');
+}
+
+.toolbar-task-button:enabled:hover .toolbar-button-label {
+    color: rgb(255, 191, 9);
+}

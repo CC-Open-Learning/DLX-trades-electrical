@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLightToGangA" enable-rich-text="true" view-data-key="LightToGangA" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/LightBoxToGangBoxIncorrect2.png?fileID=2800000&amp;guid=fd62a58ff301cf74191c7d2b6d7695e7&amp;type=3#LightBoxToGangBoxIncorrect2&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: up and along the top plate surface&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loops: at each box&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: stapled at gang box&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="A" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLightToGangB" enable-rich-text="true" view-data-key="LightToGangB" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/LightBoxToGangBoxIncorrect1.png?fileID=2800000&amp;guid=936662829d63ee64e89a2251090344ec&amp;type=3#LightBoxToGangBoxIncorrect1&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: up and through joists&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loops: none&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: through joists, stapled every 3 m and when changing direction&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="B" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLightToGangC" enable-rich-text="true" view-data-key="LightToGangC" class="task-button task-button__tall">
+        <ui:VisualElement name="CableRouteImage" class="cable-route-image" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Supply%20Cable%20Options/LightBoxToGangBoxCorrect.png?fileID=2800000&amp;guid=285573a5f75beaf4fb05319b02a839e8&amp;type=3#LightBoxToGangBoxCorrect&apos;);" />
+        <ui:Label tabindex="-1" text=" • &lt;indent=24px&gt;Route: up and through joists&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Service Loops: at each box&lt;/indent&gt;&#10; &#10; • &lt;indent=24px&gt;Supported: through joists and stapled at each box&lt;/indent&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CableRouteLabel" enable-rich-text="true" class="cable-route-text" />
+        <ui:Label tabindex="-1" text="C" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionIndicator" class="task-button-indicator" />
+        <ui:Label tabindex="-1" text="SELECTED" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Status" class="status-label" />
+    </ui:Button>
+</ui:UXML>

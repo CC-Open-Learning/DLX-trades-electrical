@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-notifications.uss?fileID=7433441132597879392&amp;guid=042fe9da42942e442bbff16de1d09dc8&amp;type=3#velcro-notifications" />
+    <ui:VisualElement name="Container" class="justify-center align-items-center align-self-center notification-success notification flex-row absolute w-max-60 m-20" style="min-width: 200px; min-height: 80px;">
+        <ui:VisualElement name="IconContainer" class="justify-center align-items-center m-8" style="width: 60px; height: 60px;">
+            <ui:VisualElement name="Icon" style="width: 44px; height: 44px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LabelContainer" class="p-8 mr-12">
+            <ui:Label tabindex="-1" text="[Text]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="fw-700 text-wrap fs-6 fs-28 m-0 p-0" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Toggle" src="project://database/Assets/VELCRO%20UI/Templates/Toggle/Toggle.uxml?fileID=9197481963319205126&amp;guid=99f9f23e8d3400747b660070e36d94d3&amp;type=3#Toggle" />
+    <ui:Template name="Slider" src="project://database/Assets/VELCRO%20UI/Templates/Slider/Slider.uxml?fileID=9197481963319205126&amp;guid=d161493787370dc449c32fd3187c47a1&amp;type=3#Slider" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-settingsmenu.uss?fileID=7433441132597879392&amp;guid=dfb8a0ae327a7f4428fa84341801292d&amp;type=3#velcro-settingsmenu" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="Canvas" class="grow w-100 justify-center align-items-center">
+        <ui:VisualElement name="SettingsMenu" class="br-20 settings-menu-simple">
+            <ui:VisualElement name="Header">
+                <ui:VisualElement name="HeaderEnd" class="br-tr-20 absolute header-end w-100 br-tl-20" />
+                <ui:VisualElement name="HeaderStart" class="pr-32 header-start">
+                    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" text="Settings" class="m-0 fw-700 fs-36 header-label pl-32 p-0 grow w-100 text-align-middle-left" style="text-overflow: ellipsis;" />
+                </ui:VisualElement>
+                <ui:Button name="CloseBtn" icon-image="project://database/Assets/Art/Sprites/UI/Icons/Close%20button.png?fileID=2800000&amp;guid=dcc1da61f006bbc4d95251b6eb5eb8ed&amp;type=3#Close button" class="p-0 m-0 header-btn-close absolute" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Body" class="grow mt-48 mb-48 body-simple">
+                <ui:VisualElement name="ThemeContainer" class="grow align-items-center flex-row m-12">
+                    <ui:VisualElement name="Left" class="flex-row grow w-50 align-items-center">
+                        <ui:Label tabindex="-1" text="Theme" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ThemeLabel" class="fw-700 fs-40 p-0 m-0 body-label" style="text-overflow: ellipsis;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow w-50 align-items-center justify-end">
+                        <ui:Instance template="Toggle" name="ThemeToggle" class="mr-16 ml-16" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SoundContainer" class="grow align-items-center flex-row m-12">
+                    <ui:VisualElement name="Left" class="flex-row grow w-50 align-items-center">
+                        <ui:Label tabindex="-1" text="Sound" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SoundLabel" class="m-0 p-0 fw-700 fs-40 body-label" style="text-overflow: ellipsis;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow w-50 align-items-center justify-end">
+                        <ui:Instance template="Toggle" name="SoundToggle" class="mr-16 ml-16" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="VolumeContainer" class="grow align-items-center flex-row m-12">
+                    <ui:VisualElement name="Left" class="flex-row grow w-50 align-items-center">
+                        <ui:Label tabindex="-1" text="Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="VolumeLabel" class="bodylabel-simple m-0 p-0 fw-700 fs-40 body-label" style="text-overflow: ellipsis;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow w-50 align-items-center justify-space-around">
+                        <ui:VisualElement name="SliderContainer" class="justify-center body-slidecontainer">
+                            <ui:Instance template="Slider" name="VolumeSlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" low-value="0.0001" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="MouseContainer" class="grow align-items-center flex-row m-12">
+                    <ui:VisualElement name="Left" class="flex-row grow w-50 align-items-center">
+                        <ui:Label tabindex="-1" text="Camera Sensitivity" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MouseLabel" class="bodylabel-simple m-0 p-0 fw-700 fs-40 body-label" style="text-overflow: ellipsis;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Right" class="flex-row grow w-50 align-items-center justify-space-around">
+                        <ui:VisualElement name="SliderContainer" class="justify-center body-slidecontainer">
+                            <ui:Instance template="Slider" name="SensitivitySlider">
+                                <AttributeOverrides element-name="FillSlider" high-value="1" />
+                            </ui:Instance>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

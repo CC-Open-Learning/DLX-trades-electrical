@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Dialog.uss?fileID=7433441132597879392&amp;guid=c78e02c666155c94daaca31a97450884&amp;type=3#Dialog" />
+    <ui:VisualElement name="Screen" class="screen modal-light">
+        <ui:VisualElement name="Window" class="window" style="width: 800px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Welcome Back" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" style="display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content" style="flex-grow: 0;">
+                <ui:Label tabindex="-1" text="Placeholder Text" parse-escape-sequences="true" display-tooltip-when-elided="true" class="h3" style="-unity-text-align: upper-center; display: none; -unity-font-style: normal;" />
+                <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; flex-direction: column; justify-content: center; align-self: stretch; align-items: center; padding-bottom: 12px;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnConfirm" text="Continue" class="confirmation-button" style="align-self: center;" />
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnCancel" text="Start from Beginning" class="confirmation-button confirmation-button__alt" style="align-self: center;" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="If you start over from the beginning, your progress will be lost" parse-escape-sequences="true" display-tooltip-when-elided="true" name="WarningLabel" class="text-blue h3" style="font-size: 22px; -unity-font-style: normal; right: -18px; align-self: center; -unity-text-align: middle-center; width: 607px;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Warning%20Icon.png?fileID=2800000&amp;guid=95df17c4a3e67bc4b81e927eb76ccc8e&amp;type=3#Warning Icon&apos;); -unity-background-scale-mode: scale-to-fit; left: -28px; width: 24px; -unity-background-image-tint-color: rgb(33, 216, 255); height: 32px; flex-shrink: 0;" />
+                </ui:Label>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

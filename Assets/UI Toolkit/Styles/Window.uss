@@ -1,0 +1,126 @@
+.screen {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    align-self: auto;
+    flex-shrink: 0;
+}
+
+.modal-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-light {
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.window {
+    background-color: rgb(17, 17, 17);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 512px;
+    min-height: 256px;
+}
+
+.header {
+    height: 84px;
+    flex-shrink: 0;
+}
+
+.header-text {
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-right: 24px;
+}
+
+.header-trim {
+    flex-grow: 1;
+    height: 24px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: rgb(99, 111, 110);
+}
+
+.header-background {
+    background-image: url('project://database/Assets/Art/Sprites/UI/ui-panel-corner.png?fileID=2800000&guid=9bbae05e30bd74949bd144ba21dec5b2&type=3#ui-panel-corner');
+    height: 84px;
+    position: absolute;
+    padding-right: 84px;
+    justify-content: center;
+    border-top-left-radius: 10px;
+}
+
+.content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    flex-grow: 1;
+}
+
+.content-text {
+    font-size: 18px;
+    white-space: normal;
+}
+
+.content-center {
+    justify-content: space-around;
+    align-items: stretch;
+    align-self: stretch;
+}
+
+.small-button {
+    width: 36px;
+    height: 36px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.small-button:hover:enabled {
+}
+
+.small-button:active:enabled {
+    scale: 0.9 0.9;
+}
+
+.small-button__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/Close%20button.png?fileID=2800000&guid=cd56dacc87737504ba1594fa63f11300&type=3#Close button');
+}
+
+.small-button__close:hover:enabled {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/Close%20button%20white.png?fileID=2800000&guid=31cfe22527446e64ebc15c5929fbe720&type=3#Close button white');
+}
+
+.small-button__back {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/Back%20button.png?fileID=2800000&guid=cae0c995430513843bc40f517c4b6da7&type=3#Back button');
+}
+
+.small-button__back:hover:enabled {
+    background-image: url('project://database/Assets/Art/Sprites/UI/Icons/Back%20button%20white.png?fileID=2800000&guid=fc3ee8c164da4e040913c2b8cdba0cdd&type=3#Back button white');
+}

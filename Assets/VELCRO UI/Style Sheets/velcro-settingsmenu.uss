@@ -1,0 +1,104 @@
+.canvas-settings-menu {
+	background-color: var(--setings-menu-canvas-dim-colour);
+}
+
+.settings-menu-simple {
+	width: 850px;
+	height: 500px;
+	background-color: var(--settings-menu-background-colour);
+}
+
+.settings-menu-complex {
+	width: 1080px;
+	height: 747px;
+	background-color: var(--settings-menu-background-colour);
+}
+
+.header-start {
+    width: 290px;
+    height: 75px;
+    background-image: var(--settings-menu-top-left-rectangle-sprite);
+    -unity-background-image-tint-color: var(--settings-menu-top-bar-colour);
+}
+
+.header-end {
+    height: 25px;
+    background-color: var(--settings-menu-top-bar-colour);
+}
+
+.header-label {
+    color: var(--settings-menu-primary-text-colour);
+}
+
+.header-btn-close {
+	width: 40px;
+	height: 40px;
+	right: 25px;
+	top: 50px;
+	background-image: var(--settings-menu-close-button-sprite);
+	background-color: var(--settings-menu-button-background-colour);
+}
+
+.body-simple {
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.body-complex {
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+}
+
+.body-label {
+	color: var(--settings-menu-secondary-text-colour);
+}
+
+.body-slidecontainer {
+	width: 300px;
+	height: 40px;
+}
+
+.body-volume-down {
+	width: 28px;
+	height: 100%;
+	-unity-background-scale-mode: scale-to-fit;
+	background-image: var(--settings-menu-volume-off-sprite);
+	-unity-background-image-tint-color: var(--settings-menu-secondary-icon-colour);
+}
+
+.body-volume-up {
+	width: 34px;
+	height: 100%;
+	-unity-background-scale-mode: scale-to-fit;
+	background-image: var(--settings-menu-volume-full-sprite);
+	-unity-background-image-tint-color: var(--settings-menu-secondary-icon-colour);
+}
+
+.body-speed-down {
+	width: 44px;
+	height: 100%;
+	-unity-background-scale-mode: scale-to-fit;
+	background-image: var(--settings-menu-tortoise-sprite);
+	-unity-background-image-tint-color: var(--settings-menu-secondary-icon-colour);
+}
+
+.body-speed-up {
+	width: 34px;
+	height: 100%;
+	-unity-background-scale-mode: scale-to-fit;
+	background-image: var(--settings-menu-rabbit-sprite);
+	-unity-background-image-tint-color: var(--settings-menu-secondary-icon-colour);
+}
+
+.body-dot-container {
+	top: 29px;
+	padding-left: 4px;
+	padding-right: 4px;
+	height: 15px;
+}
+
+.body-dot {
+	width: 4px;
+	background-color: var(--settings-menu-mouse-sensitivity-dot-colour);
+}

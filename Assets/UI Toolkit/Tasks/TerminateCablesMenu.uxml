@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Terminate Cables in Boxes" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content">
+                <ui:VisualElement name="BackBtnLabel" class="nav-container">
+                    <ui:Button name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label text="Run Supply Cable" name="NavLabelRunSupplyCable" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline" />
+                <ui:Label text="Select a box to terminate the conductors" name="SelectBoxLabel" class="instructions-text" />
+                <ui:VisualElement name="SelectionContainer" class="container" style="flex-shrink: 0;">
+                    <ui:Button name="BtnFanBox" class="task-button__square task-button">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/FanBox.png?fileID=2800000&amp;guid=140352f49e01acf4da68f678664126a7&amp;type=3#FanBox&apos;);" />
+                        <ui:Label text="Fan Box" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label text="AVAILABLE" name="LabelStatusAvailable" class="status-label task-status__available" />
+                        <ui:Label text="NOT AVAILABLE" name="LabelStatusNotAvailable" class="status-label task-status__not-available" />
+                        <ui:Label text="COMPLETE" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                    <ui:Button name="BtnLightBox" class="task-button__square task-button">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/LightBoxWithBracket.png?fileID=2800000&amp;guid=bea43e5d1339f8449926268b7a8fd3ab&amp;type=3#LightBoxWithBracket&apos;);" />
+                        <ui:Label text="Light Box" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label text="AVAILABLE" name="LabelStatusAvailable" class="task-status__available status-label" />
+                        <ui:Label text="NOT AVAILABLE" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label text="COMPLETE" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                    <ui:Button name="BtnOutletBox" class="task-button task-button__square">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/DeviceBox.png?fileID=2800000&amp;guid=7f083116d991cf1468c91c217b8f64f1&amp;type=3#DeviceBox&apos;);" />
+                        <ui:Label text="Outlet Box" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label text="AVAILABLE" name="LabelStatusAvailable" class="task-status__available status-label" />
+                        <ui:Label text="NOT AVAILABLE" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label text="COMPLETE" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                    <ui:Button name="BtnGangBox" class="task-button task-button__square">
+                        <ui:VisualElement name="BoxImage" class="thumbnail-image thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/TwoGangBox.png?fileID=2800000&amp;guid=9c29b08b76e24b14a8fe8c6c5e70b270&amp;type=3#TwoGangBox&apos;);" />
+                        <ui:Label text="Gang Box" name="LabelTitle" class="task-title" style="-unity-text-align: upper-center;" />
+                        <ui:Label text="AVAILABLE" name="LabelStatusAvailable" class="task-status__available status-label" />
+                        <ui:Label text="NOT AVAILABLE" name="LabelStatusNotAvailable" class="task-status__not-available status-label" />
+                        <ui:Label text="COMPLETE" name="LabelStatusComplete" class="task-status__complete status-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

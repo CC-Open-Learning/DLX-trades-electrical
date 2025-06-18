@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-confirmation.uss?fileID=7433441132597879392&amp;guid=9d7073424b462cb42acebaa1197ca2d2&amp;type=3#velcro-confirmation" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <ui:VisualElement name="ConfirmationDialog" class="confirmation-dialog">
+        <Kamgam.UIToolkitGlow.Shadow name="DropShadow" inner-color="#00000040" outer-color="#00000000" offset-x="4" offset-y="4" blur-width="4" class="grow" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+            <ui:VisualElement name="Background" class="grow br-20 pl-20 pr-20 pb-24 pt-24 confirmation-dialog-background">
+                <ui:VisualElement name="Header" class="flex-row justify-space-between">
+                    <ui:Label tabindex="-1" text="Replace Inspection" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" class="fs-36 fw-400 m-0 p-0 confirmation-dialog-title-label" />
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseButton" class="m-0 confirmation-dialog-close-button br-20 bw-2 p-0">
+                        <ui:VisualElement name="CloseIcon" class="grow confirmation-dialog-close-button-icon" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Body" class="confirmation-dialog-body br-20 mt-12 pb-24 pr-24 pl-36 pt-36 grow">
+                    <ui:Label tabindex="-1" text="Are you sure you want to replace the photo? " parse-escape-sequences="true" display-tooltip-when-elided="true" name="BodyTextLabel" class="fw-400 m-0 p-0 grow text-wrap fs-28 confirmation-dialog-body-label" />
+                    <ui:VisualElement name="ButtonsHolder" class="grow flex-row justify-end align-items-end" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </Kamgam.UIToolkitGlow.Shadow>
+    </ui:VisualElement>
+</ui:UXML>

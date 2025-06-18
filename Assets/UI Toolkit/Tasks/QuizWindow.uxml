@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/QuizWindow.uss?fileID=7433441132597879392&amp;guid=16740a38ed254def94bb7b2d533c5c1a&amp;type=3#QuizWindow" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Quiz Window" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content">
+                <ui:VisualElement name="BackBtnContainer" class="nav-container">
+                    <ui:Button name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label text="Back Label" name="NavLabel" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Categories" class="categories-container">
+                    <ui:VisualElement name="Category0" class="category category__first">
+                        <ui:Label text="Category 0" name="LabelCat0" class="category-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Category1" class="category category__second">
+                        <ui:Label text="Category 1" name="LabelCat1" class="category-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Category2" class="category category__third">
+                        <ui:Label text="Category 2" name="LabelCat2" class="category-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="Instructions Text - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in nibh id luctus. Integer molestie tincidunt varius. In a velit nec dolor suscipit fermentum." name="Instructions" class="instructions-text" style="max-width: 1200px; align-self: center; min-height: 80px; -unity-text-align: lower-center;" />
+                <ui:VisualElement name="SelectionArray" class="container">
+                    <ui:Button name="BtnOptionA" view-data-key="A" class="task-button task-button__tall">
+                        <ui:VisualElement name="ImageOption" class="selection-image" />
+                        <ui:Label text="Option A description&#10;Placeholder" name="LabelOption" class="selection-text" />
+                        <ui:Label text="A" name="LabelID" class="task-button-indicator" />
+                    </ui:Button>
+                    <ui:Button name="BtnOptionB" view-data-key="B" class="task-button task-button__tall">
+                        <ui:VisualElement name="ImageOption" class="selection-image" />
+                        <ui:Label text="Option B description" name="LabelOption" class="selection-text" />
+                        <ui:Label text="B" name="LabelID" class="task-button-indicator" />
+                    </ui:Button>
+                    <ui:Button name="BtnOptionC" view-data-key="C" class="task-button task-button__tall">
+                        <ui:VisualElement name="ImageOption" class="selection-image" />
+                        <ui:Label text="Option C description" name="LabelOption" class="selection-text" />
+                        <ui:Label text="C" name="LabelID" class="task-button-indicator" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

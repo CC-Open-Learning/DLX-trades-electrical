@@ -1,0 +1,33 @@
+.status-v1 {
+	width: 180px;
+	height: 45px;
+}
+
+.status-v1-notstarted {
+	background-color: var(--progress-status-not-started-background-color);
+}
+
+.status-v1-inprogress {
+	background-color: var(--progress-status-in-progress-background-color);
+}
+
+.status-v1-complete {
+	background-color: var(--progress-status-completed-background-color);
+}
+
+.status-label {
+	color: var(--progress-status-label-text-color);
+}
+
+.status-v2 {
+	width: 300px;
+	height: 30px;
+}
+
+.status-v2-inprogress {
+	background-color: var(--progress-status-in-progress-background-color);
+}
+
+.status-v2-complete {
+	background-color: var(--progress-status-completed-background-color);
+}

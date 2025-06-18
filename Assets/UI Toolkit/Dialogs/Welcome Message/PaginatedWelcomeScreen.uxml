@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="WelcomeContentPage1" src="project://database/Assets/UI%20Toolkit/Dialogs/Welcome%20Message/WelcomeContentPage1.uxml?fileID=9197481963319205126&amp;guid=7d5640a0fe0ae074d8ffea7b843eeaaa&amp;type=3#WelcomeContentPage1" />
+    <ui:Template name="WelcomeContentPage2" src="project://database/Assets/UI%20Toolkit/Dialogs/Welcome%20Message/WelcomeContentPage2.uxml?fileID=9197481963319205126&amp;guid=47a51535a1c271a45bf4e8c6082c88a6&amp;type=3#WelcomeContentPage2" />
+    <ui:Template name="WelcomeContentPage3" src="project://database/Assets/UI%20Toolkit/Dialogs/Welcome%20Message/WelcomeContentPage3.uxml?fileID=9197481963319205126&amp;guid=8a7332ed8462dce4098b1c78e6c39d64&amp;type=3#WelcomeContentPage3" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Paginated.uss?fileID=7433441132597879392&amp;guid=a2345792050c7ed4a862200bf99e6e00&amp;type=3#Paginated" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Dialog.uss?fileID=7433441132597879392&amp;guid=c78e02c666155c94daaca31a97450884&amp;type=3#Dialog" />
+    <ui:VisualElement name="Screen" class="screen modal-light">
+        <ui:VisualElement name="Window" class="window" style="width: 1180px;">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Instructions" name="HeaderText" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content" style="flex-grow: 0;">
+                <ui:VisualElement name="TabContainers">
+                    <ui:VisualElement name="TabContent1" view-data-key="1" class="tab-container">
+                        <ui:Instance template="WelcomeContentPage1" name="WelcomeContentPage1" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="TabContent2" view-data-key="2" class="tab-container" style="display: none;">
+                        <ui:Instance template="WelcomeContentPage2" name="WelcomeContentPage2" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="TabContent3" view-data-key="3" class="tab-container" style="display: none;">
+                        <ui:Instance template="WelcomeContentPage3" name="WelcomeContentPage3" style="flex-shrink: 0;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline tab-underline" />
+                <ui:VisualElement name="Tabs" class="tab-bar">
+                    <ui:Button name="Tab1" view-data-key="1" class="tab-button" />
+                    <ui:Button name="Tab2" view-data-key="2" class="tab-button" />
+                    <ui:Button name="Tab3" view-data-key="3" class="tab-button" />
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NextButton" class="confirmation-button" style="width: 170px; position: absolute; margin-top: 10px; right: 0; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Medium&apos;); -unity-font-definition: initial;">
+                        <ui:Label tabindex="-1" text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelNext" class="button-text" style="flex-direction: row; left: -6px;">
+                            <ui:VisualElement style="flex-shrink: 0; background-image: resource(&apos;Images/Toolbar/Button_Arrow_Expand_Sprite&apos;); -unity-background-scale-mode: scale-to-fit; flex-grow: 0; left: 118px; height: 22px; align-self: center; -unity-background-image-tint-color: rgb(0, 0, 0); top: 1px; width: 16px;" />
+                        </ui:Label>
+                        <ui:Label tabindex="-1" text="Got it!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelGotIt" class="button-text" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="[ X ] of [ Y ]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PageLabel" style="-unity-text-align: upper-center; font-size: 24px; color: rgb(214, 214, 214);" />
+                <ui:VisualElement name="Logo" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/conestoga-logo.png?fileID=21300000&amp;guid=725ad1130f2b67e4aa3b4a9e13100cd2&amp;type=3#conestoga-logo&apos;); -unity-background-scale-mode: scale-to-fit; width: 256px; align-self: flex-end; height: 128px; left: 18px; position: absolute; bottom: -8px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

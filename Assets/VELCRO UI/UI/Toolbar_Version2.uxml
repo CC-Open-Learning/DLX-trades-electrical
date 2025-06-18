@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-toolbar.uss?fileID=7433441132597879392&amp;guid=ca165599ff3aa4a4895631dfa8a56b80&amp;type=3#velcro-toolbar" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <ui:VisualElement name="Container" class="flex-row align-items-center align-self-start h-100">
+        <ui:VisualElement name="Toolbar" class="toolbar-version-2 bw-0 justify-space-around">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupOne" class="itemgroup-v2 p-0 m-0 flex-row justify-center align-items-center bw-0">
+                <ui:VisualElement name="SelectedBar" class="selected-bar-v2" />
+                <ui:VisualElement name="ContentContainer" class="contentgroup-v2 align-items-center">
+                    <ui:VisualElement name="IconContainer" class="iconcontainer-v2">
+                        <ui:VisualElement name="Image" class="iconimage-v2" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="label-v2 fs-24 fw-700 p-0 m-0 itemlabel-v2 mt-0" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupTwo" class="itemgroup-v2 p-0 m-0 flex-row justify-center align-items-center bw-0">
+                <ui:VisualElement name="SelectedBar" class="selected-bar-v2" />
+                <ui:VisualElement name="ContentContainer" class="contentgroup-v2 align-items-center">
+                    <ui:VisualElement name="IconContainer" class="iconcontainer-v2">
+                        <ui:VisualElement name="Image" class="iconimage-v2" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="label-v2 fs-24 fw-700 m-0 p-0 itemlabel-v2 mt-0" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="GroupThree" class="itemgroup-v2 p-0 m-0 flex-row justify-center align-items-center bw-0">
+                <ui:VisualElement name="SelectedBar" class="selected-bar-v2" />
+                <ui:VisualElement name="ContentContainer" class="contentgroup-v2 align-items-center">
+                    <ui:VisualElement name="IconContainer" class="iconcontainer-v2">
+                        <ui:VisualElement name="Image" class="iconimage-v2" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="label-v2 fs-24 fw-700 m-0 p-0 itemlabel-v2 mt-0" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/ProjectSpecification.uss?fileID=7433441132597879392&amp;guid=8332d04e5764c25418ca328657830b55&amp;type=3#ProjectSpecification" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <ui:VisualElement name="Screen" class="screen">
+        <ui:VisualElement name="Window" class="window">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="Background" class="header-background">
+                    <ui:Label text="Project Specifications" name="HeaderText" display-tooltip-when-elided="true" class="h1 header-text" />
+                </ui:VisualElement>
+                <ui:Button display-tooltip-when-elided="true" name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content">
+                <ui:Label text="Bathroom Layout &amp; Specifications" name="LayoutTitle" display-tooltip-when-elided="true" class="h2" />
+                <ui:VisualElement name="Underline" class="underline" />
+                <ui:VisualElement name="BathroomLayout" style="flex-direction: row; justify-content: space-between; margin-top: 12px;">
+                    <ui:VisualElement name="DiagramImage" style="background-image: url(&apos;project://database/Assets/Art/Diagrams/Bathroom%20Floor%20Plan.png?fileID=2800000&amp;guid=cd828c55956a5e142b3c58fc7f1a6058&amp;type=3#Bathroom Floor Plan&apos;); -unity-background-scale-mode: scale-to-fit; height: 671px; width: 1001px; align-self: center;" />
+                    <ui:VisualElement name="LayoutInfoText" style="padding-left: 8px; padding-right: 8px;">
+                        <ui:VisualElement name="FanBoxText" class="info-box">
+                            <ui:Label text="Fan" display-tooltip-when-elided="true" name="Fan" class="h3 info-header" />
+                            <ui:Label text=" • &lt;indent=24px&gt;Ceiling-mounted between tub and toilet&lt;/indent&gt;" display-tooltip-when-elided="true" name="FanText" class="info-content" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="LightBoxText" class="info-box">
+                            <ui:Label text="Light" display-tooltip-when-elided="true" name="Light" class="h3 info-header" />
+                            <ui:Label text=" • &lt;indent=24px&gt;Ceiling-mounted middle of the room&lt;/indent&gt;" display-tooltip-when-elided="true" name="LightText" class="info-content" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="OutletBoxText" class="info-box">
+                            <ui:Label text="Outlet" display-tooltip-when-elided="true" name="Outlet" class="h3 info-header" />
+                            <ui:Label text=" • &lt;indent=24px&gt;Wall-mounted between the two sinks&lt;/indent&gt;" display-tooltip-when-elided="true" name="OutletText" class="info-content" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="SwitchBoxText" class="info-box">
+                            <ui:Label tabindex="-1" text="Switch box" display-tooltip-when-elided="true" name="SwitchBox" class="h3 info-header" />
+                            <ui:Label text=" • &lt;indent=24px&gt;Wall-mounted at entry door&lt;/indent&gt;&#10;&#10; • &lt;indent=24px&gt;SP switch for light&lt;/indent&gt;&#10;&#10; • &lt;indent=24px&gt;Timer switch for fan&lt;/indent&gt;" display-tooltip-when-elided="true" name="SwitchBoxText" class="info-content" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

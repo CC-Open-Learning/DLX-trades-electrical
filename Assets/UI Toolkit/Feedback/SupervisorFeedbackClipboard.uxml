@@ -1,0 +1,83 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/SupervisorFeedback.uss?fileID=7433441132597879392&amp;guid=9385daa8eeb9a3048b70c460b6471117&amp;type=3#SupervisorFeedback" />
+    <ui:VisualElement name="FeedbackContainer" class="clipboard">
+        <ui:VisualElement name="FeedbackPage" class="paper" style="display: flex;">
+            <ui:VisualElement name="Clip" style="flex-grow: 1; width: 100px; height: 100px; position: absolute; top: -72px; background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Supervisor%20Feedback/Clip.png?fileID=2800000&amp;guid=804a4c43c6cd41142a2c6a739b10d704&amp;type=3#Clip&apos;); -unity-background-scale-mode: scale-to-fit; align-self: center;" />
+            <ui:Label tabindex="-1" text="Supervisor Feedback" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FeedbackHeader" class="feedback-header-text" style="height: 128px; flex-direction: row;">
+                <ui:VisualElement name="ContractorImageBorder" style="width: 72px; height: 72px; border-left-color: rgb(33, 132, 12); border-right-color: rgb(33, 132, 12); border-top-color: rgb(33, 132, 12); border-bottom-color: rgb(33, 132, 12); border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-top-left-radius: 36px; border-bottom-left-radius: 36px; border-top-right-radius: 36px; border-bottom-right-radius: 36px; align-items: center; align-self: center; justify-content: center; left: 24px;">
+                    <ui:VisualElement name="ContractorImage" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Supervisor%20Feedback/Contractor.png?fileID=2800000&amp;guid=71c76924556a8ef41a59b2af9b078255&amp;type=3#Contractor&apos;); width: 48px; height: 48px; -unity-background-scale-mode: scale-to-fit;" />
+                </ui:VisualElement>
+            </ui:Label>
+            <ui:VisualElement name="BoxMountingFeedback" class="feedback-container" style="display: none;">
+                <ui:VisualElement name="FanBoxContainer" class="box-mount-feedback-item">
+                    <ui:Label tabindex="-1" text="Fan box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FanBoxLabel" class="box-mount-feedback-label" />
+                    <ui:VisualElement name="FanBoxIndicatorsContainer" class="box-mount-indicator-group">
+                        <ui:VisualElement name="BoxIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorBox" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="LocationIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorLocation" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Location" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="LightBoxContainer" class="box-mount-feedback-item">
+                    <ui:Label tabindex="-1" text="Light box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LightBoxLabel" class="box-mount-feedback-label" />
+                    <ui:VisualElement name="LightBoxIndicatorsContainer" class="box-mount-indicator-group">
+                        <ui:VisualElement name="BoxIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorBox" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="LocationIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorLocation" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Location" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="OutletBoxContainer" class="box-mount-feedback-item">
+                    <ui:Label tabindex="-1" text="Outlet box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OutletBoxLabel" class="box-mount-feedback-label" />
+                    <ui:VisualElement name="OutletBoxIndicatorsContainer" class="box-mount-indicator-group">
+                        <ui:VisualElement name="BoxIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorBox" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="LocationIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorLocation" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Location" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="GangBoxContainer" class="box-mount-feedback-item">
+                    <ui:Label tabindex="-1" text="Gang box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GangBoxLabel" class="box-mount-feedback-label" />
+                    <ui:VisualElement name="GangBoxIndicatorsContainer" class="box-mount-indicator-group">
+                        <ui:VisualElement name="BoxIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorBox" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Box" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="LocationIndicatorContainer" class="feedback-indicator-container">
+                            <ui:VisualElement name="IndicatorLocation" class="feedback-indicator" />
+                            <ui:Label tabindex="-1" text="Location" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="feedback-indicator-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="CECFeedback" class="feedback-container" style="height: 424px;">
+                <ui:Label name="CECRulesExplanation" text="CEC rule violations and project non-compliances are listed below" class="cec-rules-explanation" />
+                <ui:TreeView view-data-key="unity-tree-view" focusable="true" name="FeedbackTreeView" virtualization-method="DynamicHeight" show-border="false" style="border-left-color: rgb(188, 188, 188); border-right-color: rgb(188, 188, 188); border-top-color: rgb(188, 188, 188); border-bottom-color: rgb(188, 188, 188); border-left-width: 0; border-right-width: 0; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ReviewFeedbackErrorContainer" class="review-container" style="height: 162px; display: flex; background-color: rgba(176, 0, 32, 0.2); border-left-color: rgb(176, 0, 32); border-right-color: rgb(176, 0, 32); border-top-color: rgb(176, 0, 32); border-bottom-color: rgb(176, 0, 32);">
+            <ui:Label tabindex="-1" text="Try Again!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReviewErrorStatus" class="review-status" style="color: rgb(176, 0, 32); justify-content: flex-start;">
+                <ui:VisualElement name="ErrorIcon" class="review-status-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Warning%20Icon.png?fileID=2800000&amp;guid=95df17c4a3e67bc4b81e927eb76ccc8e&amp;type=3#Warning Icon&apos;); -unity-background-image-tint-color: rgb(176, 0, 32);" />
+            </ui:Label>
+            <ui:Label tabindex="-1" text="Select the &lt;b&gt;Task List&lt;/b&gt; (from the toolbar on your left) &lt;b&gt;OR&lt;/b&gt; Select the component in the scene that you want to fix.&#10;&#10;Always review your work before asking for feedback!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReviewLabelErrorFeedback" class="review-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ReviewFeedbackCorrectContainer" class="review-container" style="display: none; background-color: rgba(9, 117, 56, 0.2); border-left-color: rgb(9, 117, 56); border-right-color: rgb(9, 117, 56); border-top-color: rgb(9, 117, 56); border-bottom-color: rgb(9, 117, 56);">
+            <ui:Label tabindex="-1" text="Great Job!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReviewCorrectStatus" class="review-status" style="color: rgb(20, 124, 65);">
+                <ui:VisualElement name="CorrectIcon" class="review-status-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Great%20Job%20Icon.png?fileID=2800000&amp;guid=18a097e7510ff024c9e5121568a9c40c&amp;type=3#Great Job Icon&apos;);" />
+            </ui:Label>
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReviewLabelCorrectFeedback" text="Select the &lt;b&gt;Task List&lt;/b&gt; (from the toolbar on your left) to continue with the next task." class="review-text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

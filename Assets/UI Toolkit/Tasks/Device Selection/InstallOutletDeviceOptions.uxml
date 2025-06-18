@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <ui:Button name="BtnOutletGFCI" view-data-key="OutletGFCI" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Outlet/xFCI-outlet-thumbnail.png?fileID=2800000&amp;guid=aef5b59746bf6cb4895091385284987b&amp;type=3#xFCI-outlet-thumbnail&apos;);" />
+        <ui:Label text="15A 125V TR GFCI Outlet" name="Label" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnOutlet20A" view-data-key="Outlet20A" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Outlet/20A-outlet-thumbnail.png?fileID=2800000&amp;guid=84ef2f1ba5b48364ab1e83468347f11a&amp;type=3#20A-outlet-thumbnail&apos;);" />
+        <ui:Label text="20A 125V TR Outlet" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnOutletTR" view-data-key="OutletTR" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Outlet/15A-outlet-thumbnail.png?fileID=2800000&amp;guid=65c69c43a4372c54ab1d16dded5429a3&amp;type=3#15A-outlet-thumbnail&apos;);" />
+        <ui:Label text="15A 125V TR Outlet" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnOutletAFCI" view-data-key="OutletAFCI" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Outlet/xFCI-outlet-thumbnail.png?fileID=2800000&amp;guid=aef5b59746bf6cb4895091385284987b&amp;type=3#xFCI-outlet-thumbnail&apos;);" />
+        <ui:Label text="15A 125V TR AFCI Outlet" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+</ui:UXML>

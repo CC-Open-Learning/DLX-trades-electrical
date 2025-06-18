@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="OutletBoxToGangBoxRoutes" src="project://database/Assets/UI%20Toolkit/Tasks/Supply%20Cable%20Selection/OutletBoxToGangBoxRoutes.uxml?fileID=9197481963319205126&amp;guid=41ca1c0660ae84d4a829644f0398dd7c&amp;type=3#OutletBoxToGangBoxRoutes" />
+    <ui:Template name="LightBoxToGangBoxRoutes" src="project://database/Assets/UI%20Toolkit/Tasks/Supply%20Cable%20Selection/LightBoxToGangBoxRoutes.uxml?fileID=9197481963319205126&amp;guid=2ed9700f1df23854b902f94e66792d11&amp;type=3#LightBoxToGangBoxRoutes" />
+    <ui:Template name="FanBoxToGangBoxRoutes" src="project://database/Assets/UI%20Toolkit/Tasks/Supply%20Cable%20Selection/FanBoxToGangBoxRoutes.uxml?fileID=9197481963319205126&amp;guid=e34b88e19e662cb438b35b47b1e496b0&amp;type=3#FanBoxToGangBoxRoutes" />
+    <ui:Template name="GangBoxToPanelRoutes" src="project://database/Assets/UI%20Toolkit/Tasks/Supply%20Cable%20Selection/GangBoxToPanelRoutes.uxml?fileID=9197481963319205126&amp;guid=d9e49eec567716b418dbd99d4ae46957&amp;type=3#GangBoxToPanelRoutes" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TabView.uss?fileID=7433441132597879392&amp;guid=38b292bfa58ca214a85ec6e76bc6fcc6&amp;type=3#TabView" />
+    <ui:VisualElement name="Screen" class="screen modal-dark">
+        <ui:VisualElement name="Window" class="window">
+            <ui:VisualElement name="Header" class="header">
+                <ui:VisualElement name="Trim" class="header-trim" />
+                <ui:VisualElement name="HeaderBackground" class="header-background">
+                    <ui:Label text="Supply Cable to Boxes" class="header-text h1" />
+                </ui:VisualElement>
+                <ui:Button name="BtnClose" class="small-button small-button__close" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" class="content">
+                <ui:VisualElement name="BackBtnContainer" class="nav-container">
+                    <ui:Button name="BtnBack" class="small-button small-button__back" />
+                    <ui:Label text="Run Supply Cable" name="Label" class="nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Tabs" class="tab-bar">
+                    <ui:Button name="FanBoxToGangBox" view-data-key="ConnectFanBoxToGangBox" class="tab-button">
+                        <ui:Label text="Fan Box from Gang Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="LightBoxToGangBox" view-data-key="ConnectLightBoxToGangBox" class="tab-button">
+                        <ui:Label text="Light Box from Gang Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="OutletBoxToGangBox" view-data-key="ConnectOutletBoxToGangBox" class="tab-button">
+                        <ui:Label text="Outlet Box from Gang Box" name="Label" class="tab-title" />
+                    </ui:Button>
+                    <ui:Button name="GangBoxToPanel" view-data-key="ConnectGangBoxToPanel" class="tab-button">
+                        <ui:Label text="Gang Box from Panel" name="Label" class="tab-title" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Underline" class="underline tab-underline" />
+                <ui:Label text="Choose any option to preview" name="Instructions" class="instructions-text" />
+                <ui:VisualElement name="TabContainers">
+                    <ui:Instance template="FanBoxToGangBoxRoutes" name="FanBoxToGangBoxRoutes" view-data-key="ConnectFanBoxToGangBox" class="container tab-container" />
+                    <ui:Instance template="LightBoxToGangBoxRoutes" name="LightBoxToGangBoxRoutes" view-data-key="ConnectLightBoxToGangBox" class="container tab-container" />
+                    <ui:Instance template="OutletBoxToGangBoxRoutes" name="OutletBoxToGangBoxRoutes" view-data-key="ConnectOutletBoxToGangBox" class="tab-container container" />
+                    <ui:Instance template="GangBoxToPanelRoutes" name="GangBoxToPanelRoutes" view-data-key="ConnectGangBoxToPanel" class="container tab-container" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

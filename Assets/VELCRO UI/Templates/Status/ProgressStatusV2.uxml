@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-status.uss?fileID=7433441132597879392&amp;guid=ebdcf26df13550745a2ea9c0c29b9e3a&amp;type=3#velcro-status" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-style.uss?fileID=7433441132597879392&amp;guid=ad7e253722514894984c83194c8b004b&amp;type=3#velcro-style" />
+    <Style src="project://database/Assets/VELCRO%20UI/Style%20Sheets/velcro-structure.uss?fileID=7433441132597879392&amp;guid=70d8b977a9d8e034a8a39d12ad97ed33&amp;type=3#velcro-structure" />
+    <ui:VisualElement name="Status" class="status-v2 p-4 align-items-center justify-center">
+        <ui:Label tabindex="-1" text="[X of Y complete]" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StatusLabel" class="m-0 p-0 fw-400 fs-16 status-label" />
+    </ui:VisualElement>
+</ui:UXML>

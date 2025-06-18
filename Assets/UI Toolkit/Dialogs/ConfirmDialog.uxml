@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/ConfirmDialog.uss?fileID=7433441132597879392&amp;guid=e3e57d5ecb8a9994d9257f407669082b&amp;type=3#ConfirmDialog" />
+    <ui:VisualElement name="Container" class="container">
+        <ui:VisualElement name="SideContainer" style="flex-grow: 1; align-items: center; flex-direction: row; height: 100%; margin-left: 32px;">
+            <ui:VisualElement name="InfoIcon" class="info-icon" />
+            <ui:VisualElement name="LabelsContainer" style="flex-grow: 1; height: 59%; margin-left: 32px;">
+                <ui:Label tabindex="-1" text="Secondary Label Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SecondaryLabel" class="dialog-label__secondary" />
+                <ui:Label tabindex="-1" text="This is a placeholder for the Primary Label Text" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MainLabel" enable-rich-text="false" class="dialog-label__main" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonsContainer" style="flex-grow: 0; justify-content: flex-end; flex-shrink: 0; flex-direction: row; margin-left: 16px; margin-right: 16px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnRedo" enable-rich-text="false" focusable="true" class="dialog-button dialog-button__redo">
+                <ui:VisualElement name="Icon" class="inner-button-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Vector.png?fileID=2800000&amp;guid=d4edc187a50b04540bf3d26c740101d7&amp;type=3#Vector&apos;);" />
+                <ui:Label tabindex="-1" text="Redo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="inner-button-text" style="color: rgb(255, 204, 51);" />
+            </ui:Button>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnConfirm" focusable="true" class="dialog-button dialog-button__confirm">
+                <ui:VisualElement name="Icon" class="inner-button-icon" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Icons/Checkmark.png?fileID=21300000&amp;guid=1bc08629181b5cd4c83ca23462ae0ebb&amp;type=3#Checkmark&apos;); -unity-background-image-tint-color: rgb(0, 0, 0);" />
+                <ui:Label tabindex="-1" text="Confirm" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="inner-button-text" style="color: rgb(0, 0, 0);" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

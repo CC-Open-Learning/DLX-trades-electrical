@@ -1,0 +1,15 @@
+.splash-canvas {
+	background-image: var(--splash-background-image);
+	transition-duration: 1.5s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out-back;
+}
+
+.splash-canvas-fade {
+	opacity: 0;
+}
+
+.splash-message {
+	color: var(--splash-label-colour);
+    bottom: 15%;
+}

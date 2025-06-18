@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/styles.uss?fileID=7433441132597879392&amp;guid=4845223a35bad7145a02684451d12f8c&amp;type=3#styles" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TaskList.uss?fileID=7433441132597879392&amp;guid=8f037475a7b148344a152f7fce3834e1&amp;type=3#TaskList" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Window.uss?fileID=7433441132597879392&amp;guid=ee0854b48edff7a4ab564d4dede91840&amp;type=3#Window" />
+    <ui:Button name="BtnSwitchSinglePole" view-data-key="LightSwitchSinglePole" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Switch/single-pole-switch-thumbnail.png?fileID=2800000&amp;guid=efcfd5bf217937c41b7835e9af5e9ee5&amp;type=3#single-pole-switch-thumbnail&apos;); -unity-background-scale-mode: scale-to-fit;" />
+        <ui:Label text="15A 120V Single Pole Switch" name="Label" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnTimer60Minute" view-data-key="LightSwitchTimer60Minute" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Switch/timer-switch-60-minutes-thumbnail.png?fileID=2800000&amp;guid=6a8d27f3eadda6d40ac25b58f0713e35&amp;type=3#timer-switch-60-minutes-thumbnail&apos;);" />
+        <ui:Label text="Single Pole Timer Switch" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnSwitch3Way" view-data-key="LightSwitch3Way" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Switch/3-way-switch-thumbnail.png?fileID=2800000&amp;guid=ec9cdd0257d30a740970404375b4b5c2&amp;type=3#3-way-switch-thumbnail&apos;);" />
+        <ui:Label text="15A 120V 3-Way Switch" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+    <ui:Button name="BtnSwitch4Way" view-data-key="LightSwitch4Way" class="content-center task-button__square task-button">
+        <ui:VisualElement name="ButtonImage" class="thumbnail-image__square" style="background-image: url(&apos;project://database/Assets/Art/Sprites/UI/Thumbnails/Device%20Options/Switch/4-way-switch-thumbnail.png?fileID=2800000&amp;guid=9cb303a86bc3b6746a3f10a89a411ab9&amp;type=3#4-way-switch-thumbnail&apos;);" />
+        <ui:Label text="15A 120V 4-Way Switch" class="content-text" />
+        <ui:Label text="INSTALLED" name="Status" class="status-label" />
+    </ui:Button>
+</ui:UXML>
