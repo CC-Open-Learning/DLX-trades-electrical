@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using VARLab.CloudSave;
 
 namespace VARLab.TradesElectrical
@@ -41,13 +42,13 @@ namespace VARLab.TradesElectrical
 
         [Header("Feedback Events")]
         public UnityEvent<Task, bool, bool> DisplaySelectionFeedback = new();
-        
+
         public UnityEvent<ConfirmSelectionInfo> ConfirmInfoChanged = new();
 
         public UnityEvent<bool> DisableContractorFeedback = new();
-        
+
         public UnityEvent BlinkTaskListIcon = new();
-        
+
         [Header("Box Mounting Task Events")]
 
         public UnityEvent<Task> ShowBoxSelectionMenu = new();
@@ -59,7 +60,7 @@ namespace VARLab.TradesElectrical
 
 
         [Header("Supply Cable Task Events")]
-        
+
         public UnityEvent<Task> ShowSupplyCableSelectionMenu = new();
 
         public UnityEvent<int> MountedCableCountUpdated = new();
@@ -82,7 +83,7 @@ namespace VARLab.TradesElectrical
         public UnityEvent DeviceInstallTasksCompleted = new();
 
         public UnityEvent DeviceInstallTasksCorrect = new();
-        
+
         [Header("Scene Transition Events for Loading")]
         public UnityEvent LoadedPastRoughInTasks = new();
 
@@ -106,7 +107,7 @@ namespace VARLab.TradesElectrical
         [JsonProperty] private bool isCircuitQuizStarted = false;
         [JsonProperty] private bool isFinalTransitionStarted = false;
         private bool isSetupCableTaskComplete = false;
-        
+
         public int GetCompletedTasksNum()
         {
             return CompletedMountingTasks.Count;
@@ -340,7 +341,7 @@ namespace VARLab.TradesElectrical
 
             LoadAllCableMountingTasksStates();
             if (!RunSupplyCableMenu.IsTerminateQuizCompleted) { return; }
-        
+
             LoadWireTerminationTasks();
             if (!roughInTasksDone) { return; }
 
@@ -709,7 +710,7 @@ namespace VARLab.TradesElectrical
                 }
             }
         }
-        
+
         /// <summary>
         /// Skips cable mounting task using requested mountable set in mounting task
         /// </summary>
@@ -749,16 +750,23 @@ namespace VARLab.TradesElectrical
         {
             foreach (var task in AllMountingTasksMap.Values.OfType<DeviceMountingTask>())
             {
-                if(task.SelectedMountableName == MountableName.None){ continue; } 
+                if (task.SelectedMountableName == MountableName.None) { continue; }
                 TaskSelectionMenu.SetDeviceInstallBtnStatus(WorkflowStatus.InProgress);
                 currentMounter = deviceMounter;
                 task.RequestedDevice = task.SelectedMountableName;
                 deviceMounter.OnLoadComplete(task);
-                
+
                 task.GetComponent<WireMountingTask>();
                 wireMounter.OnLoadComplete(task.GetComponent<WireMountingTask>());
                 MountingTaskCompleted(task);
             }
         }
+
+        public void ResetScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }    
+
+      
     }
 }
